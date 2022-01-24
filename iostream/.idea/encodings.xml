@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../../../../test2.dat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/IoTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/swei/bytestream/InputStreamTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/swei/bytestream/OutputStreamTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/swei/charstream/ReadFileTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/swei/charstream/WriterFileTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/swei/processingflow/BufferWriterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/swei/serialization/DeserializeTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/swei/serialization/SerializationTest.java" charset="UTF-8" />
+  </component>
+</project>
