@@ -26,7 +26,7 @@
         <!--加载sql映射文件-->
         <!--<mapper resource="com/Swei/mapper/DeptMapper.xml"/>-->
 
-        <!--Mapper代理方式 进行包扫描-->
-        <package name="com.Swei.mapper"/>
+        <!--Mapper代理方式 进行包扫描，找的是mapper包下所有接口，然后去找和接口的名字相同的xml进行扫描-->
+        <package name="com.sweij.mapper"/>
     </mappers>
 </configuration>

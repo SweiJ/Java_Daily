@@ -74,3 +74,420 @@ DEBUG main deptmapper.selectMap - <==      Total: 4
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@12e61fe6]
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@12e61fe6]
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 317071334 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 333683827.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13e39c73]
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==>  Preparing: select * from dept;
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==> Parameters: 
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13e39c73]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13e39c73]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 333683827 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1850180796.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6e4784bc]
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==>  Preparing: select * from dept;
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==> Parameters: 
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6e4784bc]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6e4784bc]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1850180796 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1850180796.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6e4784bc]
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==>  Preparing: select * from dept;
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==> Parameters: 
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6e4784bc]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6e4784bc]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1850180796 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.Swei.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1664439369.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@63355449]
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==>  Preparing: select * from dept;
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - ==> Parameters: 
+DEBUG main com.Swei.mapper.DeptMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@63355449]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@63355449]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1664439369 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.Swei.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 203849460.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main com.Swei.mapper.DeptMapper.insert - ==>  Preparing: insert into dept values (?, ?, ?)
+DEBUG main com.Swei.mapper.DeptMapper.insert - ==> Parameters: 50(Integer), SWEI(String), HENAN(String)
+DEBUG main com.Swei.mapper.DeptMapper.insert - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 203849460 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest/target/classes/com/Swei/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.Swei.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 203849460.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main com.Swei.mapper.DeptMapper.insert - ==>  Preparing: insert into dept values (?, ?, ?)
+DEBUG main com.Swei.mapper.DeptMapper.insert - ==> Parameters: 50(Integer), SWEI(String), HENAN(String)
+DEBUG main com.Swei.mapper.DeptMapper.insert - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@c267ef4]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 203849460 to pool.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG Finalizer org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1636182655.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@61862a7f]
+DEBUG main com.sweij.mapper.DeptMapper.selectMore - ==>  Preparing: SELECT * from dept WHERE deptno=?,
+DEBUG main com.sweij.mapper.DeptMapper.selectMore - ==> Parameters: 10(Integer)
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  	 
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/%e4%b8%8b%e8%bd%bd/%e6%a1%8c%e9%9d%a2/Java/JavaGit/MyBatiesTest1/target/classes/com/sweij/mapper/DeptMapper.xml
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sweij.mapper.DeptMapper matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1636182655.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@61862a7f]
+DEBUG main com.sweij.mapper.DeptMapper.selectMore - ==>  Preparing: SELECT * from dept WHERE deptno=?
+DEBUG main com.sweij.mapper.DeptMapper.selectMore - ==> Parameters: 10(Integer)
+DEBUG main com.sweij.mapper.DeptMapper.selectMore - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@61862a7f]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@61862a7f]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1636182655 to pool.

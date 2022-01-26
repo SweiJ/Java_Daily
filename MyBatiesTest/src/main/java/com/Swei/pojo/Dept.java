@@ -1,3 +1,5 @@
+package com.Swei.pojo;
+
 import java.io.Serializable;
 
 /**

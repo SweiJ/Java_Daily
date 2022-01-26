@@ -1,11 +1,11 @@
+import com.Swei.mapper.DeptMapper;
+import com.Swei.pojo.Dept;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.*;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -29,15 +29,23 @@ public class TestA {
 
         // 执行方法
         // 返回多条结果
-        //List<Dept> list = sqlSession.selectList("deptmapper.selectAll");
+        //List<com.Swei.pojo.Dept> list = sqlSession.selectList("deptmapper.selectAll");
 
         // 返回一条结果
-        //Dept dept = sqlSession.selectOne("deptmapper.selectOne");
+        //com.Swei.pojo.Dept dept = sqlSession.selectOne("deptmapper.selectOne");
 
         // 返回map类型
-        Map<Object, Object> id = sqlSession.selectMap("deptmapper.selectMap", "deptno");
+        //Map<Object, Object> id = sqlSession.selectMap("deptmapper.selectMap", "deptno");
 
-        System.out.println(id);
+        // 查询操作
+//        DeptMapper dm = sqlSession.getMapper(DeptMapper.class);
+//        List<Dept> dept = dm.selectAll();
+//        System.out.println(dept);
+
+        // 插入操作
+        DeptMapper dm = sqlSession.getMapper(DeptMapper.class);
+        Dept dept = new Dept(50, "SWEI", "HENAN");
+        System.out.println(dm.insert(dept));
 
         // 关闭资源
         sqlSession.close();
