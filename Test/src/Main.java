@@ -23,21 +23,11 @@ class TreeNode {
 }
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[][] arr = new int[n][n];
+        int[] arr1 = {1,3,5,7,9};
+        int[] arr2 = {2,4,5,8,10};
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j <= i; j++) {
-                if(j == 0 || j == i) {
-                    arr[i][j] = 1;
-                } else {
-                    arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
-                }
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
+        int[] arr = mergeArray(arr1, arr2);
+        System.out.println(Arrays.toString(arr));
     }
     public int widthOfBinaryTree(TreeNode root) {
         if(root == null) {
@@ -108,6 +98,62 @@ public class Main {
             gap /= 2;
         }
         shell(array, 1);//保证最后是1组
+    }
+    /**
+     *
+     * @param array1 有序的
+     * @param array2 有序的
+     * @return
+     */
+    public static int[] mergeArray(int[] array1,int[] array2) {
+        int n = array1.length + array2.length;
+        int[] temp = new int[n];
+        int s1 = 0, s2 = 0;
+        int e1  = array1.length - 1, e2 = array2.length - 1;
+
+        for (int i = 0; i < n; i++) {
+            if(s1 <= e1 && s2 <= e2) {
+                if (array1[s1] > array2[s2]) {
+                    temp[i] = array2[s2++];
+                } else {
+                    temp[i] = array1[s1++];
+                }
+            } else {
+                if(s1 <= e1) {
+                    for (int j = i; j < n; j++) {
+                        temp[i] = array1[s1++];
+                    }
+                }
+                if(s2 <= e2) {
+                    for (int j = i; j < n; j++) {
+                        temp[i] = array2[s2++];
+                    }
+                }
+            }
+        }
+        return temp;
+    }
+    public static void mergeSort(int[] array) {
+        mergeSortInternal(array, 0, array.length - 1);
+    }
+    public static void mergeSortInternal(int[] array, int low, int high) {
+        int mid = low + (low - high) >>> 1;
+        mergeSortInternal(array, low, mid);
+        mergeSortInternal(array, mid + 1, high);
+        merge(array, low, mid, high);
+
+    }
+    private static void merge(int[] array, int low, int mid, int high) {
+        int[] temp = new int[high];
+        int s2 = mid + 1;
+        int k = 0;
+        while(low <= mid && mid + 1 <= high) {
+            if(array[low] <= array[mid +1]) {
+                temp[k++] = array[low++];
+            } else {
+                temp[k++] = array[s2++];
+            }
+        }
     }
 }
 
