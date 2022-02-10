@@ -22,7 +22,7 @@ class TreeNode {
     }
 }
 public class Main {
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         int[] arr1 = {1,3,5,7,9};
         int[] arr2 = {2,4,5,8,10};
 
@@ -154,6 +154,54 @@ public class Main {
                 temp[k++] = array[s2++];
             }
         }
+    }
+
+    public static void main2(String[] args) {
+        int[] arr = {1,2,3,2,2,2,5,4,2,3};
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+
+            if(map.containsKey(arr[i])) {
+                Integer count = map.get(arr[i]); // get(key) 得到的是value值
+                count++;
+                System.out.print(count + " ");
+                map.put(arr[i], count);
+            } else {
+                map.put(arr[i], 1);
+            }
+        }
+        Iterator<Map.Entry<Integer, Integer>> iterator = map.entrySet().iterator();
+        while(iterator.hasNext()) {
+            Map.Entry<Integer, Integer> next = iterator.next();
+            System.out.println(next);
+        }
+    }
+    // 无聊的逗
+    public static void main3(String[] args) {
+        Scanner cin=new Scanner(System.in);
+        int ans=Integer.MIN_VALUE;
+        int n = cin.nextInt();
+        int []array=new int[1<<n];
+        int []nums=new int[n];
+        for(int i=0;i<n;++i){
+            nums[i]=cin.nextInt();
+            array[1<<i]=nums[i];
+        }
+        for(int i=0;i<1<<n;++i){
+            for(int j=0;j<n;++j){
+                if((i&(1<<j))==0)continue;
+                array[i]=array[i-(1<<j)]+nums[j];
+                break;
+            }
+        }
+        for(int i=1;i<(1<<n);++i){
+            int j=(1<<n)-i-1;
+            for(int k=j;k>0;k=(k-1)&j){
+                if(array[k]==array[i])
+                    ans=Math.max(array[k],ans);
+            }
+        }
+        System.out.print(ans);
     }
 }
 
