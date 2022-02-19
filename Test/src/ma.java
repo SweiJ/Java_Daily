@@ -30,7 +30,7 @@ public class ma {
             return count;
         }
 
-        while() {
+        while(true) {
             for (int i = 0; i < len; i++) {
                 int[] temp = new int[2];
                 for (int j = 0; j < 2; j++) {
