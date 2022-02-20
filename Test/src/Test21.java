@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,6 +24,23 @@ public class Test21 {
     public static void main(String[] args) {
 
     }
+    public boolean IsPopOrder(int[] pushA, int[] popA) {
+        if(pushA == null || popA == null || pushA.length != popA.length) {
+            return false;
+        }
+        Stack<Integer> st = new Stack<>();
+        int i = 0;
+        int j = 0;
+        for (; i < pushA.length; i++) {
+            st.push(pushA[i]);
+            while(!st.isEmpty() && pushA[i] == popA[j]){
+                st.pop();
+                j++;
+            }
+        }
+        return st.isEmpty();
+    }
+
 }
 class Solution {
     public Node copyRandomList(Node head) {
@@ -63,39 +77,39 @@ class Solution {
         return count;
     }
 
-    public static void func(String strExce,String strActual) {
-        Set<Character> set = new HashSet();
-        for(int i = 0; i < strExce.length(); i++) {
-            if()
-            set.add(strExce.charAt(i));
-        }
-        for (int i = 0; i < strActual.length(); i++) {
-            set.add(strActual.charAt(i));
-        }
-    }
+//    public static void func(String strExce,String strActual) {
+//        Set<Character> set = new HashSet();
+//        for(int i = 0; i < strExce.length(); i++) {
+//            if()
+//            set.add(strExce.charAt(i));
+//        }
+//        for (int i = 0; i < strActual.length(); i++) {
+//            set.add(strActual.charAt(i));
+//        }
+//    }
 }
 
 class Node1 {
     public int val;
     public Node left;
-    public Node right;
+    public Node1 right;
     public Node1(int val) {
         this.val = val;
     }
 }
 
-public class BinarySearchTree {
-    public Node1 root = null;
-    public Node1 search(int key) {
-        Node1 cur = root;
-        while(cur != null) {
-            if(cur.val == key) {
-                return cur;
-            }
-            if(cur.val < key) {
-                cur = cur.right;
-            }
-        }
-    }
-
-}
+//public class BinarySearchTree {
+//    public Node1 root = null;
+//    public Node1 search(int key) {
+//        Node1 cur = root;
+//        while(cur != null) {
+//            if(cur.val == key) {
+//                return cur;
+//            }
+//            if(cur.val < key) {
+//                cur = cur.right;
+//            }
+//        }
+//    }
+//
+//}
