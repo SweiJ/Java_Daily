@@ -1,5 +1,7 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -43,4 +45,57 @@ class Solution {
         }
         return map.get(head);
     }
+
+    public int numJewelsInStones(String jewels, String stones) {
+        Set<Character> set = new HashSet();
+        if(jewels.length() == 0 || stones.length() == 0) {
+            return 0;
+        }
+        for (int i = 0; i < jewels.length(); i++) {
+            set.add(jewels.charAt(i));
+        }
+        int count = 0;
+        for (int i = 0; i < stones.length(); i++) {
+            if (set.contains(stones.charAt(i))) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void func(String strExce,String strActual) {
+        Set<Character> set = new HashSet();
+        for(int i = 0; i < strExce.length(); i++) {
+            if()
+            set.add(strExce.charAt(i));
+        }
+        for (int i = 0; i < strActual.length(); i++) {
+            set.add(strActual.charAt(i));
+        }
+    }
+}
+
+class Node1 {
+    public int val;
+    public Node left;
+    public Node right;
+    public Node1(int val) {
+        this.val = val;
+    }
+}
+
+public class BinarySearchTree {
+    public Node1 root = null;
+    public Node1 search(int key) {
+        Node1 cur = root;
+        while(cur != null) {
+            if(cur.val == key) {
+                return cur;
+            }
+            if(cur.val < key) {
+                cur = cur.right;
+            }
+        }
+    }
+
 }
