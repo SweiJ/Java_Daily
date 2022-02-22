@@ -21,8 +21,63 @@ class Node {
     }
 }
 public class Test21 {
+    static byte flag = 0;
     public static void main(String[] args) {
+        Permutation("abc");
+    }
 
+    public static ArrayList<String> Permutation(String str) {
+        ArrayList<String> result = new ArrayList<>();
+        if(str.length() == 0) {
+            return result;
+        }
+        FullPermuDFS(str, result, " ");
+        return result;
+    }
+    public static void FullPermuDFS(String str, ArrayList<String> result, String cur) {
+        if(str.length() == 0) {
+            if(!result.contains(cur)) {
+                result.add(cur);
+            }
+        }
+        for (int i = 0; i < str.length(); i++) {
+            FullPermuDFS(str.substring(0, i)+str.substring(i+1, str.length()), result, cur+str.charAt(i));
+        }
+    }
+
+    void FindPathDFS(TreeNode root, int expectNumber, List<Stack<Integer>> result, Stack<Integer> stack) {
+        if(root == null) {
+            return;
+        }
+        stack.push(root.val);
+        expectNumber -= root.val;
+        if(expectNumber == 0 && root.left == null && root.right == null) {
+            result.add(stack);
+        }
+        FindPathDFS(root.left, expectNumber, result, stack);
+        FindPathDFS(root.right, expectNumber, result, stack);
+        stack.pop();
+    }
+    List<Stack<Integer>> FindPath(TreeNode root, int expectNumber) {
+        List<Stack<Integer>> result = new LinkedList<>();
+        Stack<Integer> stack = new Stack<>();
+        if(root == null) {
+            return result;
+        }
+        FindPathDFS(root, expectNumber, result, stack);
+        return result;
+    }
+    public int firstUniqChar(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+             map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if(map.get(s.charAt(i)) == 1) {
+                return i;
+            }
+        }
+        return -1;
     }
     public boolean IsPopOrder(int[] pushA, int[] popA) {
         if(pushA == null || popA == null || pushA.length != popA.length) {
@@ -113,3 +168,7 @@ class Node1 {
 //    }
 //
 //}
+
+
+
+
