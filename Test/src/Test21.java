@@ -1,3 +1,4 @@
+import java.sql.PreparedStatement;
 import java.util.*;
 
 /**
@@ -21,9 +22,85 @@ class Node {
     }
 }
 public class Test21 {
-    static byte flag = 0;
-    public static void main(String[] args) {
-        Permutation("abc");
+
+//    public static void main(String[] args) {
+//        ArrayList<Integer> arrayList = new ArrayList<>();
+//        arrayList.add(3);
+//        arrayList.add(32);
+//        arrayList.add(321);
+//        String str = PrintMinNumber(arrayList);
+//        System.out.println(str);
+//    }
+//    static String PrintMinNumber(ArrayList<Integer> number) {
+//        if(number.size() == 0) {
+//            return "";
+//        }
+//        Cmp c = new Cmp();
+//        number.sort(c);
+//        StringBuilder sb = new StringBuilder("");
+//        for (int i = 0; i < number.size(); i++) {
+//            sb.append(number.get(i));
+//        }
+//        return sb.toString();
+//    }
+//    static class Cmp implements Comparator {
+//        @Override
+//        public int compare(Object o1, Object o2) {
+//            return (String)o1  - (String)o2;
+//        }
+//    }
+    public static void main1(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        while (num-- > 0) {
+            StringBuilder sb = new StringBuilder(sc.next());
+            System.out.println(isPlalindrome(sb));
+        }
+    }
+    public static int isPlalindrome(StringBuilder sb) {
+        // 初始下标
+        int left = 0;
+        // 末尾下标
+        int right = sb.length() - 1;
+        while(left < right) {
+            // 判断左右两边下标值是否相等
+            if(sb.charAt(left) != sb.charAt(right)) {
+                // 如果删除左边的下标值, 判断左边的下一个下标值与右边值是否相等
+                // 如果相等证明要删除的是左边下标值，否则是右边下标值
+                if(sb.charAt(left + 1) == sb.charAt(right)) {
+                    return left;
+                } else {
+                    return right;
+                }
+            }
+            left++;
+            right--;
+        }
+        // 循环到这时，证明该字符串是回文
+        return -1;
+    }
+
+
+    public static int FindGreatestSumOfSubArray(int[] array) {
+        if(array.length == 0) {
+            return 0;
+        }
+        // 定义dp用来保存相加后的值
+        int[] dp = new int[array.length];
+        dp[0] = array[0];
+        for (int i = 1; i < array.length; i++) {
+            // 当前面相加的值小于当前值的时候 重新从当前值开始相加
+            dp[i] = Math.max(dp[i - 1] + array[i], array[i]);
+        }
+        int max = dp[0];
+        // 找出最大的一个
+        for (int i = 1; i < dp.length; i++) {
+            if(max < dp[i]) {
+                max = dp[i];
+            }
+        }
+        return max;
     }
 
     public static ArrayList<String> Permutation(String str) {
