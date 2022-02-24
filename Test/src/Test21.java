@@ -23,32 +23,40 @@ class Node {
 }
 public class Test21 {
 
-//    public static void main(String[] args) {
-//        ArrayList<Integer> arrayList = new ArrayList<>();
-//        arrayList.add(3);
-//        arrayList.add(32);
-//        arrayList.add(321);
-//        String str = PrintMinNumber(arrayList);
-//        System.out.println(str);
-//    }
-//    static String PrintMinNumber(ArrayList<Integer> number) {
-//        if(number.size() == 0) {
-//            return "";
-//        }
-//        Cmp c = new Cmp();
-//        number.sort(c);
-//        StringBuilder sb = new StringBuilder("");
-//        for (int i = 0; i < number.size(); i++) {
-//            sb.append(number.get(i));
-//        }
-//        return sb.toString();
-//    }
-//    static class Cmp implements Comparator {
-//        @Override
-//        public int compare(Object o1, Object o2) {
-//            return (String)o1  - (String)o2;
-//        }
-//    }
+    public static void main(String[] args) {
+        int[] number = {11,3};
+        String str = PrintMinNumber(number);
+        System.out.println(str);
+    }
+    static String PrintMinNumber(int[] numbers) {
+        if(numbers.length == 0) {
+            return "";
+        }
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < numbers.length; i++) {
+            list.add(numbers[i]);
+        }
+        Cmp c = new Cmp();
+        list.sort(c);
+        StringBuilder sb = new StringBuilder("");
+        for (int i = 0; i < list.size(); i++) {
+            sb.append(list.get(i));
+        }
+        return sb.toString();
+    }
+    static class Cmp implements Comparator<Integer> {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+            String p = Integer.toString(o1);
+            String q = Integer.toString(o2);
+            String a = p;
+            a += q;
+            String b = q;
+            b += p;
+            int i = Integer.parseInt(a) > Integer.parseInt(b) ? 1 : -1;
+            return i;
+        }
+    }
     public static void main1(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
