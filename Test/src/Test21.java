@@ -24,6 +24,59 @@ class Node {
 public class Test21 {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+
+        int[] w = new int[n + 1];
+        int[] v = new int[n + 1];
+        for(int i = 1; i <= n; i++){
+            w[i] = sc.nextInt();
+            v[i] = sc.nextInt();
+        }
+        int res = bag(n, m, w, v);
+        System.out.println(res);
+    }
+    static int bag(int n, int m, int[] w, int[] v) {
+        int[][] dp = new int[n + 1][m + 1];
+        for (int i = 1; i <= n; i++)				// 前i类
+            for (int j = 1; j <= m; j++)			// 容积
+                for (int k = 0; k * w[i] <= j; k++)	// 第i类物品被容积允许的数量
+                    dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - k * w[i]] + k * v[i]);
+        return dp[n][m];
+    }
+
+    public static void main3(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[] skill = new int[n];
+        for (int i = 0; i < n; i++) {
+            skill[i] = sc.nextInt();
+        }
+        int[][] arr = new int[n - 1][2];
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < 2; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+        int[] dp = skill(n, m, arr, skill);
+        int max = dp[0];
+        for (int i = 1; i < n - 1; i++) {
+            if(max < dp[i]) {
+                 max = dp[i];
+            }
+        }
+        System.out.println(max);
+    }
+    public static int[] skill(int n, int m, int[][] arr, int[] skill) {
+        int[] dp = new int[n - 1];
+        for (int i = 0; i < n - 1; i++) {
+            dp[i] = dp[arr[i][0]] + dp[arr[i][1]];
+        }
+        return dp;
+    }
+    public static void main2(String[] args) {
         int[] number = {11,3};
         String str = PrintMinNumber(number);
         System.out.println(str);
