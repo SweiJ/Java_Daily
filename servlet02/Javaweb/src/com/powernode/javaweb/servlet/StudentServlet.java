@@ -34,7 +34,6 @@ public class StudentServlet implements Servlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         try {
-
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/powernode?characterEncoding-utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
             String user = "root";
