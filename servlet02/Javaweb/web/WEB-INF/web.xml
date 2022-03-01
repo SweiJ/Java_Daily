@@ -3,6 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
+
+    <!--该部分可以使用servletContext方法访问-->
+    <context-param>
+        <param-name>pageSize</param-name>
+        <param-value>10</param-value>
+    </context-param>
+    <context-param>
+        <param-name>beginIndex</param-name>
+        <param-value>0</param-value>
+    </context-param>
+
+    <!--该部分使用servletConfig方法访问-->
     <servlet>
         <servlet-name>studentServlet</servlet-name>
         <servlet-class>com.powernode.javaweb.servlet.StudentServlet</servlet-class>
@@ -11,5 +23,14 @@
     <servlet-mapping>
         <servlet-name>studentServlet</servlet-name>
         <url-pattern>/servlet/student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletDemo</servlet-name>
+        <servlet-class>com.powernode.javaweb.servlet.ServletDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDemo</servlet-name>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
 </web-app>
