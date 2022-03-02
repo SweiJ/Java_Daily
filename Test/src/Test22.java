@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -10,7 +13,30 @@ import java.util.Set;
  * Time: 15:18
  */
 public class Test22 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder("atsdgsdg");
+        int m = 3;
+        System.out.println(sb);
+    }
+    public static void main3(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        String str = "java";
+        // 将字符串添加"xiao"字符串
+        sb.append("xiao");
+        // 将sb字符串中第 [0, 2) 位字符替换为str -- javaao
+        sb.replace(0, 2, str);
+        // 删除第 [3, 5) 为字符                -- javo
+        sb.delete(3, 5);
+        // 返回字符串的长度                     -- 4
+        System.out.println(sb.length());
+        // 返回指定下标的值                     -- j
+        System.out.println(sb.charAt(0));
+        // 返回下标为 [0, 3) 之间的子序列        -- jav
+        System.out.println(sb.substring(0, 3));
+        System.out.println(sb);
+    }
+    public static void main2(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] fib = new int[1000000 + 1];

@@ -11,7 +11,123 @@ import java.util.*;
  * Time: 18:34
  */
 public class Main {
+
+    private static int[] arr = new int[1005];
+    private static int[] temp = new int[1005];
     public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        Arrays.sort(arr, 0, n);
+        temp[0] = arr[0];
+        for (int i = 1; i < n; i++) {
+            temp[i] = temp[i - 1] + arr[i];
+        }
+        while(m-- != 0) {
+            int x = sc.nextInt();
+            if(weight(x, n - 1)) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
+    }
+    public static boolean weight(int x, int i) {
+        if(i < 0)
+            return false;
+        // 两盘重量差大于当前剩余的砝码和
+        if(Math.abs(x) > temp[i])
+            return false;//无法称出
+        if(Math.abs(x) == temp[i] || x==0) {//如果两盘一样重了 或者 剩余的砝码的重量和刚好等于两个盘的差值
+            return true;//可以称出
+        }
+        if(weight(x-arr[i],i-1) || weight(x+arr[i],i-1) || weight(x,i-1))//将该砝码放在砝码盘 、物品盘、不放
+            return true;
+        return false;
+    }
+    public static void main7(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        String[] strs = bf.readLine().split(" ");
+        int p1 = Integer.parseInt(strs[0]);
+        int p2 = Integer.parseInt(strs[1]);
+        int p3 = Integer.parseInt(strs[2]);
+
+        String str = bf.readLine();
+        StringBuilder sb = new StringBuilder(str);
+        int i = 0;
+        while(i < sb.length()) {
+            char c = sb.charAt(i);
+            if(c == '-' && i > 0 && i < sb.length() - 1) {
+                // '-' 符号前面的字符和 '-'符号后面的字符
+                char begin = sb.charAt(i - 1);
+                char end = sb.charAt(i + 1);
+                // 前后字符之差 为了找出中间的字符
+                int index = end - begin;
+                // 当后面的字符比前面字符大时
+                StringBuilder temp = new StringBuilder("");
+                if(begin < end) {
+                    if(((begin >= 'a' && begin <= 'z') && (end >= 'a' && end <= 'z')) || ((begin >= '0' && begin <= '9') && (end >= '0' && end <= '9'))) {
+                        while (index-- != 1) {
+                            // 寻找当前所需要的字符
+                            begin += 1;
+                            // 单个字符循环次数
+                            int p22 = p2;
+                            while (p22-- != 0) {
+                                temp.append(begin);
+                            }
+                        }
+                        // 将'-'符号替换
+                        if(p3 == 2) {
+                            temp.reverse();
+                        }
+                        String n = temp.toString();
+                        if(p1 == 1) {
+                            sb.replace(i, i + 1, n);
+                        }
+                        if(p1 == 2) {
+                            sb.replace(i, i + 1, n.toUpperCase(Locale.ROOT));
+                        }
+                        if(p1 == 3) {
+                            for (int j = 0; j < temp.length(); j++) {
+                                n = n.replace(n.charAt(j), '*');
+                            }
+                            sb.replace(i, i + 1, n);
+                        }
+                    }
+                }
+            }
+            i++;
+        }
+        System.out.println(sb);
+    }
+    public static void main6(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        // trim删除字符串前后的空白字符
+        int n = Integer.parseInt(bf.readLine().trim());
+        int[][] arr = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            String[] str = bf.readLine().split(" ");
+            for (int j = 0; j < n; j++) {
+                arr[i][j] = Integer.parseInt(str[j]);
+            }
+        }
+        for (int i = 1; i < n; i++) {
+            arr[0][i] = arr[0][i - 1] + arr[0][i];
+        }
+        for (int i = 1; i < n; i++) {
+            arr[i][0] = arr[i - 1][0] + arr[i][0];
+        }
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                arr[i][j] = Math.max(arr[i - 1][j], arr[i][j - 1]) + arr[i][j];
+            }
+        }
+        System.out.println(arr[n - 1][n - 1]);
+    }
+    public static void main5(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String numStr = bf.readLine();
 
@@ -40,47 +156,15 @@ public class Main {
                 }
             // 如果最后一位的值为0
             } else if (i == len - 1 && j == 0) {
-                // 如果最后一位前面也是0， 则删除前面的数
+                // 如果最后一位前面也是0， 则删除"ling "5位
                 if (!b)
-                    read.append(read.substring(0, read.length() - 5));
-                // ling
+                    read.delete(read.length() - 5, read.length());
             } else {
                 read.append(num[j] + wei[numStr.length() - i - 1]);
                 b = true;
             }
         }
         System.out.println(read);
-    }
-    public static void main5(String[] args) throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        String str = bf.readLine();
-        String[] arr = {"ling","yi","er","san","si","wu","liu","qi","ba","jiu","shi","bai","qian","wan","yi"};
-        int len = str.length();
-        switch (len) {
-            case 0 :
-                System.out.println(" ");
-                break;
-            case 1 :
-                System.out.println(arr[Integer.parseInt(str)]);
-                break;
-            case 2 :
-                if(str.charAt(1) == '0') {
-
-                    System.out.println(arr[Integer.valueOf(str.charAt(0))] + "shi");
-                } else {
-                    System.out.println(arr[Integer.valueOf(str.charAt(0))] + "shi" + arr[Integer.valueOf(str.charAt(1))]);
-                }
-                break;
-            case 3 :
-            case 4 :
-            case 5 :
-            case 6 :
-            case 7 :
-            case 8 :
-            case 9 :
-            case 10 :
-            case 11 :
-        }
     }
     // 矩阵乘法
     public static void main4(String[] args) throws IOException {
