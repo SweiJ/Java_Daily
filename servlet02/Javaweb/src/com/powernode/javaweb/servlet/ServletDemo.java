@@ -64,5 +64,11 @@ public class ServletDemo extends GenericServlet {
 		if(a < 18) {
 			application.log("当前值小于正常值", new Exception("存在一个错误！"));
 		}
+
+		// 在ServletContext引用域中存放数据
+		application.setAttribute("xiao", "lisi");
+		// 取数据
+		Object num = application.getAttribute("xiao");
+		System.out.println(num);
     }
 }

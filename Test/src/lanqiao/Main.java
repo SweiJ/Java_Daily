@@ -11,10 +11,96 @@ import java.util.*;
  * Time: 18:34
  */
 public class Main {
+    int findPosInInOrder(String str,String in,int position){
+        char c = str.charAt(position);
+        int length = in.length();
+        for(int i=0;i<length;i++){
+            if(c==in.charAt(i))
+                return i;
+        }
+        return -1;
 
+    }
+    /**
+     * 已知后序、中序，求先序
+     * @param postOrder
+     * @param inOrder
+     * @param length
+     */
+    void preOrder(String postOrder,String inOrder,int length){
+        if(1==length){
+            System.out.println(inOrder);
+            return;
+        }
+        if(0==length){
+            return;
+        }
+        int index = findPosInInOrder(postOrder, inOrder,postOrder.length()-1);
+        String inOrder_left = inOrder.substring(0,index);
+        String inOrder_right = inOrder.substring(index+1);
+
+        String postOrder_left = postOrder.substring(0,index);
+        String postOrder_right = postOrder.substring(index+1,postOrder.length()-1);
+
+        System.out.println(postOrder.charAt(postOrder.length()-1));
+        preOrder(postOrder_left,inOrder_left,inOrder_left.length());
+        preOrder(postOrder_right,inOrder_right,inOrder_right.length());
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        Main m = new Main();
+        String in = sc.nextLine();
+        String post = sc.nextLine();
+
+        m.preOrder(post, in, in.length());
+    }
+
+    public static void main9(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        Integer[] arr = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = i + 1;
+        }
+
+        while(m-- != 0) {
+            int pi = sc.nextInt();
+            int qi = sc.nextInt();
+            if(pi == 0)
+            {
+                for(int i=0;i<qi-1;i++)
+                    for(int j=0;j<qi-i-1;j++)
+                    {
+                        if(arr[j]<arr[j+1])
+                        {
+                            Integer s=arr[j];
+                            arr[j]=arr[j+1];
+                            arr[j+1]=s;
+                        }
+                    }
+            }
+            if(pi == 1)
+            {
+                for(int i = 0;i < arr.length - qi;i++)
+                    for(int j = qi - 1;j <= arr.length - qi - i;j++)
+                    {
+                        if(arr[j]>arr[j+1])
+                        {
+                            Integer s=arr[j];
+                            arr[j]=arr[j+1];
+                            arr[j+1]=s;
+                        }
+                    }
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
     private static int[] arr = new int[1005];
     private static int[] temp = new int[1005];
-    public static void main(String[] args) throws IOException {
+    public static void main8(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
