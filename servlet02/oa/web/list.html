@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>部门列表页面</title>
+</head>
+<script type="text/javascript">
+    function del(dno) {
+        // 显示提示框
+        if(window.confirm('亲,删除了就不能恢复了!')) {
+            document.location.href = ''
+        }
+    }
+</script>
+<body>
+    <h1 align='center'>部门列表</h1>
+    <hr >
+    <table border='1px' align='center' width='50%'>
+        <tr>
+            <th>序号:</th>
+            <th>部门编号:</th>
+            <th>部门名称:</th>
+            <th>操作</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>10</td>
+            <td>销售部</td>
+            <td>
+                <a href=''>删除</a>
+                <a href='edit.html'>修改</a>
+                <a href='detail.html'>详情</a>
+            </td>
+        </tr>
+
+    </table>
+    <hr >
+    <a href='add.html'>新增部门</a>
+
+</body>
+</html>

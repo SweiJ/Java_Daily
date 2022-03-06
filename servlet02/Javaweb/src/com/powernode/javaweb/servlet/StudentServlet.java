@@ -58,7 +58,7 @@ public class StudentServlet implements Servlet {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        response.setContentType("text/html");
+        response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
