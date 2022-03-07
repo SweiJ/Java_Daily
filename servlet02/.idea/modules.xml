@@ -6,8 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/Javaweb01/Javaweb01.iml" filepath="$PROJECT_DIR$/Javaweb01/Javaweb01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Javaweb02/Javaweb02.iml" filepath="$PROJECT_DIR$/Javaweb02/Javaweb02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Javaweb03/Javaweb03.iml" filepath="$PROJECT_DIR$/Javaweb03/Javaweb03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JspTest/JspTest.iml" filepath="$PROJECT_DIR$/JspTest/JspTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/oa/oa.iml" filepath="$PROJECT_DIR$/oa/oa.iml" />
       <module fileurl="file://$PROJECT_DIR$/oa01/oa01.iml" filepath="$PROJECT_DIR$/oa01/oa01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oa02/oa02.iml" filepath="$PROJECT_DIR$/oa02/oa02.iml" />
     </modules>
   </component>
 </project>
