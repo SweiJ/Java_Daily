@@ -10,7 +10,8 @@
     <h1>LOGIN PAGE</h1>
 <form action="<%=request.getContextPath()%>/user/login" method="post">
     用户名: <input type="text" name="username" value=""><br>
-    密码: <input type="password" name="passwd" value=""><br>
+    密码:   <input type="password" name="passwd" value=""><br>
+           <input type="checkbox" name="f" value="1">十天内免登陆<br>
     <input type="submit" name="login"/><br>
 </form>
 

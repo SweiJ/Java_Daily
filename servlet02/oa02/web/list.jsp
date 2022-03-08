@@ -18,6 +18,8 @@
         </script>
 
         <h1 align='center'>部门列表</h1>
+
+        <a href="<%=request.getContextPath()%>/user/exit">退出系统</a>
         <hr >
         <table border='1px' align='center' width='50%'>
             <tr>
