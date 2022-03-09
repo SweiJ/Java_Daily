@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDaoImpl" class="org.example.dao.impl.UserDaoImpl">
+
+    </bean>
+    <bean id="user" class="org.example.domain.SysUser">
+        <property name="name" value="xiaozhang"/>
+        <property name="age" value="22"/>
+    </bean>
+
+    <bean id="userServiceImpl" class="org.example.service.impl.UserServiceImpl">
+    </bean>
+</beans>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        DI: 给属性赋值
+        1. set注入 Spring通过调用set方法 对属性进行赋值
+          ①. 基本类型
+           <bean id="名称" class="类路径">
+                <constructor-arg index="0" value="第一个参数赋值"/>
+                <constructor-arg index="1" value="第二个参数赋值"/>
+
+                <property name="set属性" value="赋值"/>
+                <property name="set属性" value="赋值"/>
+           </bean>
+           ②. 引用类型
+           <bean id="名称" class="类路径">
+                <constructor-arg index="0" value="第一个参数赋值"/>
+                <constructor-arg index="1" value="第二个参数赋值"/>
+
+                <property name="set属性" ref="该属性的类id"/>
+           </bean>
+    -->
+    <bean id="mystudent" class="org.example.Student">
+        <!--<constructor-arg index="0" value="xiaojiang"/>
+        <constructor-arg index="1" value="20"/>-->
+
+        <property name="name" value="xiaojiang"/>
+        <property name="age" value="20"/>
+    </bean>
+</beans>
