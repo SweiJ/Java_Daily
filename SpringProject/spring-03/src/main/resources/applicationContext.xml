@@ -6,11 +6,13 @@
     <bean id="userDaoImpl" class="org.example.dao.impl.UserDaoImpl">
 
     </bean>
+
     <bean id="user" class="org.example.domain.SysUser">
         <property name="name" value="xiaozhang"/>
         <property name="age" value="22"/>
     </bean>
 
     <bean id="userServiceImpl" class="org.example.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDaoImpl" />
     </bean>
 </beans>

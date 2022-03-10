@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--当我们需要很多配置文件的时候 放在一个文件里面会很拥挤杂乱
+        所以我们可以分为模块功能配置  或者  按照类来配置-->
+    <import resource="spring-*.xml"/>
+</beans>

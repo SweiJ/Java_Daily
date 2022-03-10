@@ -1,6 +1,7 @@
 package org.example.service.impl;
 
 import org.example.dao.UserDao;
+import org.example.dao.impl.UserDaoImpl;
 import org.example.domain.SysUser;
 import org.example.service.UserService;
 
@@ -14,9 +15,6 @@ import org.example.service.UserService;
 public class UserServiceImpl implements UserService {
     private UserDao userDao = null;
 
-    public UserDao setUserDao() {
-        return userDao;
-    }
 
     @Override
     public void addUser(SysUser user) {
@@ -24,4 +22,7 @@ public class UserServiceImpl implements UserService {
     }
 
 
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
 }

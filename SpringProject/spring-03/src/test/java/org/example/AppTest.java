@@ -27,7 +27,6 @@ public class AppTest
     public void text() {
         String config = "applicationContext.xml";
         ApplicationContext cxt =  new ClassPathXmlApplicationContext(config);
-        UserDao userDao = (UserDao) cxt.getBean("userDao");
         SysUser user = (SysUser) cxt.getBean("user");
         UserServiceImpl userServiceImpl = (UserServiceImpl) cxt.getBean("userServiceImpl");
 

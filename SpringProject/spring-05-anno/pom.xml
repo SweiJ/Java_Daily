@@ -5,11 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>spring-03</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>spring-05-anno</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>spring-03</name>
+  <name>spring-05-anno</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="school" class="org.example.School">
+        <property name="name" value="黄冈师范学院" />
+        <property name="address" value="黄冈市" />
+        <property name="fee" value="4500" />
+    </bean>
+</beans>
