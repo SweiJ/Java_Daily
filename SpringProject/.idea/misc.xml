@@ -5,15 +5,17 @@
       <list>
         <option value="$PROJECT_DIR$/Spring-01/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-02-di/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-03/pom.xml" />
         <option value="$PROJECT_DIR$/spring-04/pom.xml" />
         <option value="$PROJECT_DIR$/spring-04-configs/pom.xml" />
         <option value="$PROJECT_DIR$/spring-05-anno/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-06-Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringAop-01-aspectJJ/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring-03/Spring-04/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-03/Spring-06-homework/pom.xml" />
       </set>
     </option>
   </component>
