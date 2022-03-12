@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-04-configs" />
         <module name="Spring-06-Homework" />
-        <module name="spring-05-anno" />
+        <module name="spring-aop-homework" />
         <module name="SpringAop-01-aspectJJ" />
         <module name="Spring-01" />
         <module name="Spring-02-di" />
+        <module name="spring-05-anno" />
+        <module name="spring-aop-home" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +26,8 @@
       <module name="spring-05-anno" target="1.8" />
       <module name="Spring-06-Homework" target="1.8" />
       <module name="Spring-06-homework" target="1.7" />
+      <module name="spring-aop-home" target="1.8" />
+      <module name="spring-aop-homework" target="1.8" />
       <module name="SpringAop-01-aspectJJ" target="1.8" />
     </bytecodeTargetLevel>
   </component>
