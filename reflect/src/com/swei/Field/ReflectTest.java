@@ -15,7 +15,11 @@ import java.util.ResourceBundle;
  */
 public class ReflectTest {
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main5(String[] args) throws ClassNotFoundException {
+        Class<?> c = Class.forName("com.swei.Field.FieldTest");
+        System.out.println(c.getName());
+    }
+    public static void main4(String[] args) throws ClassNotFoundException {
         Class c = Class.forName("com.swei.Field.FieldTest");
         // 输出完整类路径
         System.out.println(c.getName());
@@ -75,15 +79,23 @@ public class ReflectTest {
         System.out.println(classpath);
         in.close();
     }
-    public static void main1(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         try {
             Class.forName("com.swei.Field.Relect");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
-        Class c = int.class;
-        Class c1 = Relect.class;
+        Class<?> aClass1 = Class.forName("com.swei.Field.Relect");
+
+        Class<Relect> aClass2 = Relect.class;
+
+        Relect relect = new Relect();
+        Class<? extends Relect> aClass3 = relect.getClass();
+
+        System.out.println(aClass1.getName());
+        System.out.println(aClass2.getName());
+        System.out.println(aClass3.getName());
 
         /**
          * Thread.currentThread() 获取当前线程

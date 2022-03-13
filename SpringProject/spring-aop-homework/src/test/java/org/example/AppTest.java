@@ -31,5 +31,5 @@ public class AppTest
 
         Integer integer = number.addNum(0, 200, 110);
         System.out.println(integer);
-    } 
+    }
 }
