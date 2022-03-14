@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+<!--    <settings>-->
+<!--        <setting name="logImpl" value="LOG4J"/>-->
+<!--    </settings>-->
+
+    <typeAliases>
+        <package name="org.example.domain"/>
+    </typeAliases>
+
+    <mappers>
+        <!--加载sql映射文件-->
+        <!--<mapper resource="com/Swei/mapper/DeptMapper.xml"/>-->
+
+        <!--Mapper代理方式 进行包扫描，找的是mapper包下所有接口，然后去找和接口的名字相同的xml进行扫描-->
+        <package name="org.example.Dao"/>
+    </mappers>
+</configuration>

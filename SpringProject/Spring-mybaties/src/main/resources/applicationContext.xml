@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--加载外部jdbc配置文件-->
+    <context:property-placeholder location="classpath:jdbc.properties" />
+
+    <!--声明DataSource-->
+    <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+    </bean>
+
+    <!--声明sqlSessionFactory-->
+    <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--数据源-->
+        <property name="dataSource" ref="myDataSource"/>
+        <!--指定myBatis主配置文件-->
+        <!--classpath 到类路径下寻找配置文件-->
+        <property name="configLocation" value="classpath:myBatis.xml" />
+    </bean>
+
+    <!--声明MapperScannerConfigurer-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--指定sqlSessionFactory对象-->
+        <property name="sqlSessionFactoryBeanName" value="factory" />
+        <!--指定基本包 Dao类所在路径-->
+        <property name="basePackage" value="org.example.Dao" />
+    </bean>
+
+    <bean id="studentService" class="org.example.service.Impl.StudentServiceImpl" >
+        <property name="studentDao" ref="studentDao" />
+    </bean>
+</beans>
