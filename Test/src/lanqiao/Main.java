@@ -11,6 +11,14 @@ import java.util.*;
  * Time: 18:34
  */
 public class Main {
+    public static void main(String[] args) {
+        for (int i = 0; i < 32; i++) {
+            String s = Integer.toBinaryString(i);
+
+            System.out.printf("%05d\n", Integer.parseInt(s));
+        }
+    }
+
     int findPosInInOrder(String str,String in,int position){
         char c = str.charAt(position);
         int length = in.length();
@@ -46,7 +54,7 @@ public class Main {
         preOrder(postOrder_left,inOrder_left,inOrder_left.length());
         preOrder(postOrder_right,inOrder_right,inOrder_right.length());
     }
-    public static void main(String args[]){
+    public static void main10(String args[]){
         Scanner sc = new Scanner(System.in);
         Main m = new Main();
         String in = sc.nextLine();
