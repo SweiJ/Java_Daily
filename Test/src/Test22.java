@@ -13,7 +13,17 @@ import java.util.Set;
  * Time: 15:18
  */
 public class Test22 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        String a = new String("xiao");
+        String b = new String("xiao");
+        String c = "xiao";
+        String d = "xiao";
+        System.out.println(a==b);
+        System.out.println(a.equals(b));
+
+        System.out.println(c==d);
+    }
+    public static void main4(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder("atsdgsdg");
         int m = 3;

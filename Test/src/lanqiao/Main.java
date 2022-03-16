@@ -11,7 +11,32 @@ import java.util.*;
  * Time: 18:34
  */
 public class Main {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[][] arr = new int[n][n];
+        int i, j;
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < n; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+
+        for(i = 0;i < n; i++) {
+            int x = 0;
+            for(j = 0;j < n; j++) {
+                if(arr[j][i]==1) {
+                    x++;
+                }
+            }
+            if(2 * x > n)
+                System.out.print((i + 1) + " ");
+        }
+    }
+
+    public static void main11(String[] args) {
         for (int i = 0; i < 32; i++) {
             String s = Integer.toBinaryString(i);
 

@@ -9,16 +9,10 @@
 <body>
     <h1>修改部门</h1>
     <hr >
-    <form action='<%=request.getContextPath()%>/dept/modify' method='post'>
-    <%
-        Dept dept = (Dept)request.getAttribute("dept");
-        String deptno = dept.getDeptno();
-        String dname = dept.getDname();
-        String loc = dept.getLoc();
-    %>
-      部门编号<input type='text' name='deptno' value='<%=deptno%>' readonly /><br>
-      部门名称<input type='text' name='dname' value='<%=dname%>'/><br>
-      部门位置<input type='text' name='loc' value='<%=loc%>'/><br>
+    <form action='${pageContext.request.contextPath}/dept/modify' method='post'>
+      部门编号<input type='text' name='deptno' value='${dept.deptno}' readonly /><br>
+      部门名称<input type='text' name='dname' value='${dept.dname}'/><br>
+      部门位置<input type='text' name='loc' value='${dept.loc}'/><br>
       <input type='submit' name='保存'/><br>
     </form>
 </body>

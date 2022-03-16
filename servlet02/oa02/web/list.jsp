@@ -12,14 +12,14 @@
             function del(dno) {
                 // 显示提示框
                 if(window.confirm('亲,删除了就不能恢复了!')) {
-                    document.location.href = '<%=request.getContextPath()%>/dept/delete?deptno=' + dno;
+                    document.location.href = '${pageContext.request.contextPath}/dept/delete?deptno=' + dno;
                 }
             }
         </script>
 
         <h1 align='center'>部门列表</h1>
 
-        <a href="<%=request.getContextPath()%>/user/exit">退出系统</a>
+        <a href="${pageContext.request.contextPath}/user/exit">退出系统</a>
         <hr >
         <table border='1px' align='center' width='50%'>
             <tr>
@@ -45,8 +45,8 @@
                 <td><%=loc%></td>
                 <td>
                     <a href='javascript:void(0)' onclick="del(<%=deptno%>)">删除</a>
-                    <a href='<%=request.getContextPath()%>/dept/detail?f=edit&deptno=<%=deptno%>'>修改</a>
-                    <a href='<%=request.getContextPath()%>/dept/detail?f=detail&deptno=<%=deptno%>'>详情</a>
+                    <a href='${pageContext.request.contextPath}/dept/detail?f=edit&deptno=<%=deptno%>'>修改</a>
+                    <a href='${pageContext.request.contextPath}/dept/detail?f=detail&deptno=<%=deptno%>'>详情</a>
                 </td>
             </tr>
             <%
@@ -55,7 +55,7 @@
 
         </table>
         <hr >
-        <a href='<%=request.getContextPath()%>/add.jsp'>新增部门</a>
+        <a href='${pageContext.request.contextPath}/add.jsp'>新增部门</a>
 
     </body>
 </html>

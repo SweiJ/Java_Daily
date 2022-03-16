@@ -38,6 +38,15 @@ public class UserServlet extends HttpServlet {
         if (session != null) {
             // 手动销毁session
             session.invalidate();
+            Cookie[] cookies = request.getCookies();
+            if (cookies != null) {
+                for (Cookie cookie : cookies) {
+                    String name = cookie.getName();
+                    if("username".equals(name) || "passwd".equals(name)) {
+                        cookie.setMaxAge(0);
+                    }
+                }
+            }
             // 跳转到首页
             response.sendRedirect(request.getContextPath());
         }

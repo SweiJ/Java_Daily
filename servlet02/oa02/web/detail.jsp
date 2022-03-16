@@ -9,16 +9,10 @@
 </head>
 <body>
   <h1>部门详情</h1>
-  <%
-      Dept deptDetail = (Dept)request.getAttribute("dept");
-      String deptno = deptDetail.getDeptno();
-      String dname = deptDetail.getDname();
-      String loc = deptDetail.getLoc();
-  %>
     <hr >
-    部门编号: <%=deptno%> <br>
-    部门名称: <%=dname%> <br>
-    部门位置: <%=loc%> <br>
+    部门编号: ${dept.deptno} <br>
+    部门名称: ${dept.dname} <br>
+    部门位置: ${dept.loc} <br>
     <input type='button' value='返回' onclick='window.history.back()'/>
 </body>
 </html>
