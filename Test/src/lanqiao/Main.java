@@ -12,7 +12,103 @@ import java.util.*;
  */
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        int[] arr = {-1, 3, 6, 7, -10};
+        MaxSubSum(arr);
+    }
+    public static void MaxSubSum(int[] arr) {
+        int n = arr.length;
+        int[] dp = new int[n];
+        for (int i = 0; i < n; i++) {
+            dp[i] = arr[i];
+            for (int j = 0; j < n; j++) {
+                dp[j] = Math.max(dp[j], dp[j] * arr[j]);
+            }
+        }
+        System.out.println(dp[n - 1]);
+    }
+    public static void main17(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        String S = bf.readLine();
+        String T = bf.readLine();
+
+
+    }
+    public static void main16(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        String[] s = bf.readLine().split(" ");
+
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < s.length; i++) {
+            int temp = Integer.parseInt(s[i]);
+            set.add(temp);
+        }
+        Integer[] arr = new Integer[set.size()];
+        set.toArray(arr);
+        Arrays.sort(arr);
+        for (Integer integer : arr) {
+            System.out.println(integer);
+        }
+    }
+    public static void main15(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int s=sc.nextInt();
+        int t=sc.nextInt();
+        int w=sc.nextInt();
+        char jam[]=sc.next().toCharArray();
+        int i=w;
+        int j,count=0;
+        while (--i>=0){
+            char a = (char) ('a' + t);
+            j=i;
+            while (jam[j] < a - (w-j)){
+                jam[j]+=1;
+                while (++j<w){
+                    jam[j]= (char) (jam[j-1]+1);
+                }
+                count++;
+                System.out.println(jam);
+                if(count==5)
+                    return;
+                j=w-1;
+            }
+            i=j;
+        }
+    }
+    public static void main14(String[] args) {
+        String s = Integer.toBinaryString(1001);
+        System.out.println(s);
+    }
+    public static void main13(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        String[] arr = bf.readLine().split(" ");
+        int s = Integer.parseInt(arr[0]);
+        int t = Integer.parseInt(arr[1]);
+        int w = Integer.parseInt(arr[2]);
+
+        String s1 = bf.readLine();
+        int j = 0;
+        StringBuilder sb = new StringBuilder("");
+        for (int i = s; i <= t; i++) {
+            char c  = (char) ('a' + i);
+            // 如果字符相等则置为1
+            if(c == s1.charAt(j)) {
+                sb.append(1);
+                j++;
+            } else {
+                sb.append(0);
+            }
+        }
+        int i = Integer.parseInt(String.valueOf(sb));
+        while(i-- != 0) {
+//            isTrue(i);
+        }
+    }
+//    public static Boolean isTrue(int i) {
+//
+//    }
+
+    public static void main12(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[][] arr = new int[n][n];
