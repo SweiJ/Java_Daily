@@ -47,6 +47,5 @@ public class JdbcDemo01 {
 
         resultSet.close();
         statement1.close();
-        connection.rollback(savepoint);
     }
 }
