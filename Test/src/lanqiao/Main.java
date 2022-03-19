@@ -12,6 +12,47 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
+        System.out.println(uniquePaths(3, 7));
+    }
+
+    public static int uniquePaths(int m, int n) {
+
+        int[][] dp = new int[m][n];
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                if(i == 0 || j == 0) {
+                    dp[i][j] = 1;
+                } else {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+                }
+            }
+        }
+        return dp[m - 1][n - 1];
+    }
+    public Boolean isPlain(String str) {
+        int len = str.length();
+        for (int i = 0; i < len / 2; i++) {
+            if(str.charAt(i) != str.charAt(len - i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public String longestPalindrome(String s) {
+        String ans = "";
+        int max = 0;
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1; j <= s.length(); j++) {
+                String str = s.substring(i, j);
+                if(isPlain(str) && str.length() > max) {
+                    ans = s.substring(i, j);
+                    max = Math.max(max, ans.length());
+                }
+            }
+        }
+        return ans;
+    }
+    public static void main19(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         square(n);
