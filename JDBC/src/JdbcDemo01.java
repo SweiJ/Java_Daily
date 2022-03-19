@@ -19,6 +19,7 @@ public class JdbcDemo01 {
         ((MysqlDataSource)dataSource).setURL("jdbc:mysql://localhost:3306/t1?characterEncoding=utf-8&useSSL=false");
         ((MysqlDataSource)dataSource).setUser("root");
         ((MysqlDataSource)dataSource).setPassword("jsw");
+        
         Connection connection = dataSource.getConnection();
         String sql = "insert into student01 values('zhang', 22)";
         PreparedStatement statement = connection.prepareStatement(sql);

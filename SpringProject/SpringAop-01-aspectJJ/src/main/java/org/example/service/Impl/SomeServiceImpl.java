@@ -9,6 +9,7 @@ import org.example.service.SomeService;
  * Date: 2022-03-12
  * Time: 9:22
  */
+
 public class SomeServiceImpl implements SomeService {
     @Override
     public void doSome() {

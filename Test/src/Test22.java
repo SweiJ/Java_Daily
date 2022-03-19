@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -12,8 +13,55 @@ import java.util.Set;
  * Date: 2022-02-27
  * Time: 15:18
  */
+
+class A {}
+class B extends A {}
+class C extends B {}
+class Fruit{
+    @Override
+    public String toString() {
+        return "fruit";
+    }
+}
+
+class Apple extends Fruit{
+    @Override
+    public String toString() {
+        return "apple";
+    }
+}
+class GenerateTest<T>{
+    public void show_1(T t){
+        System.out.println(t.toString());
+    }
+}
 public class Test22 {
+
     public static void main(String[] args) {
+//        ArrayList<? super B> arrayList1 = new ArrayList<>();
+//        //
+//        arrayList1.add(new A());
+//        arrayList1.add(new B());
+//        arrayList1.add(new C());
+//
+//        A o1 = (A) arrayList1.get(0);
+//
+//        ArrayList<? extends A> arrayList2 = new ArrayList<>();
+//        arrayList2.add(new A());
+//        arrayList2.add(new B());
+//        arrayList2.add(new C());
+//
+////        A o2 = (A) arrayList2.get(0);
+//        A a = arrayList2.get(0);
+
+        Apple apple = new Apple();
+
+        GenerateTest<Fruit> generateTest = new GenerateTest<Fruit>();
+        //apple是Fruit的子类，所以这里可以
+        generateTest.show_1(apple);
+    }
+
+    public static void main5(String[] args) {
         String a = new String("xiao");
         String b = new String("xiao");
         String c = "xiao";

@@ -11,8 +11,32 @@ import java.util.*;
  * Time: 18:34
  */
 public class Main {
-
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        square(n);
+    }
+    public static void square(int n) {
+        for (int i = 0; i < Math.sqrt(n); i++) {
+            if(i * i <= n) {
+                for (int j = i; j < Math.sqrt(n); j++) {
+                    if(i * i + j * j <= n) {
+                        for (int k = j; k < Math.sqrt(n); k++) {
+                            if(i * i + j * j + k * k <= n) {
+                                for (int l = k; l < Math.sqrt(n); l++) {
+                                    if(i * i + j * j + k * k + l * l == n) {
+                                        System.out.println(i + " " + j + " " + k + " " + l);
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    public static void main18(String[] args) {
         int[] arr = {-1, 3, 6, 7, -10};
         MaxSubSum(arr);
     }
