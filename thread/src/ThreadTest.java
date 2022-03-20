@@ -32,7 +32,7 @@ class T extends Thread {
     @Override
     public void run() {
         T1 t1 = new T1(10);
-        System.out.println(t1.toString());
+        System.out.println(t1);
         System.out.println("±ª÷¥––¡À£°");
     }
 }

@@ -11,7 +11,64 @@ import java.util.*;
  * Time: 18:34
  */
 public class Main {
-    public static void main(String[] args) {
+    public static int[][] arr;
+    public static int[] arrx = {0,-1,0,1};
+    public static int[] arry = {-1,0,1,0};
+    public static int ex, ey, n;
+    public static Boolean[][] vis;
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        n = Integer.parseInt(bf.readLine());
+        arr = new int[n][n];
+        vis = new Boolean[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                vis[i][j] = false;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            String[] s = bf.readLine().split(" ");
+            for (int j = 0; j < n; j++) {
+                arr[i][j] = Integer.parseInt(s[j]);
+            }
+        }
+        String[] s = bf.readLine().split(" ");
+        int bx = Integer.parseInt(s[0]);
+        int by = Integer.parseInt(s[1]);
+        ex = Integer.parseInt(s[2]);
+        ey = Integer.parseInt(s[3]);
+        if(arr[bx - 1][by - 1] == 1) {
+            System.out.println("NO");
+            return;
+        }
+        System.out.println(dfs(bx - 1, by - 1) ? "YES" : "NO");
+    }
+
+    public static Boolean isPass(int x, int y) {
+        // x >= 0 && x < ex && y >= 0 && y < ey 判读当前坐标是否在范围内
+        // vis[i][j] 判断当前坐标是否走过
+        // arr[i][j] != 1 判断当前坐标是否是墙
+        if((x >= 0 && x < ex && y >= 0 && y < ey) && !vis[x][y] && arr[x][y] != 1) {
+            return true;
+        }
+        return false;
+    }
+    public static Boolean dfs(int x, int y) {
+        if(x == ex - 1 && y == ey - 1) {
+            return true;
+        }
+        vis[x][y] = true;
+        // 遍历四个方向
+        for (int i = 0; i < 4; i++) {
+             int xx = x + arrx[i];
+             int yy = y + arry[i];
+            if(isPass(xx, yy) && dfs(xx, yy)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void main20(String[] args) {
         System.out.println(uniquePaths(3, 7));
     }
 
@@ -292,42 +349,42 @@ public class Main {
             System.out.print(arr[i] + " ");
         }
     }
-    private static int[] arr = new int[1005];
-    private static int[] temp = new int[1005];
-    public static void main8(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-        Arrays.sort(arr, 0, n);
-        temp[0] = arr[0];
-        for (int i = 1; i < n; i++) {
-            temp[i] = temp[i - 1] + arr[i];
-        }
-        while(m-- != 0) {
-            int x = sc.nextInt();
-            if(weight(x, n - 1)) {
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
-            }
-        }
-    }
-    public static boolean weight(int x, int i) {
-        if(i < 0)
-            return false;
-        // 两盘重量差大于当前剩余的砝码和
-        if(Math.abs(x) > temp[i])
-            return false;//无法称出
-        if(Math.abs(x) == temp[i] || x==0) {//如果两盘一样重了 或者 剩余的砝码的重量和刚好等于两个盘的差值
-            return true;//可以称出
-        }
-        if(weight(x-arr[i],i-1) || weight(x+arr[i],i-1) || weight(x,i-1))//将该砝码放在砝码盘 、物品盘、不放
-            return true;
-        return false;
-    }
+//    private static int[] arr = new int[1005];
+//    private static int[] temp = new int[1005];
+//    public static void main8(String[] args) throws IOException {
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int m = sc.nextInt();
+//        for (int i = 0; i < n; i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//        Arrays.sort(arr, 0, n);
+//        temp[0] = arr[0];
+//        for (int i = 1; i < n; i++) {
+//            temp[i] = temp[i - 1] + arr[i];
+//        }
+//        while(m-- != 0) {
+//            int x = sc.nextInt();
+//            if(weight(x, n - 1)) {
+//                System.out.println("YES");
+//            } else {
+//                System.out.println("NO");
+//            }
+//        }
+//    }
+//    public static boolean weight(int x, int i) {
+//        if(i < 0)
+//            return false;
+//        // 两盘重量差大于当前剩余的砝码和
+//        if(Math.abs(x) > temp[i])
+//            return false;//无法称出
+//        if(Math.abs(x) == temp[i] || x==0) {//如果两盘一样重了 或者 剩余的砝码的重量和刚好等于两个盘的差值
+//            return true;//可以称出
+//        }
+//        if(weight(x-arr[i],i-1) || weight(x+arr[i],i-1) || weight(x,i-1))//将该砝码放在砝码盘 、物品盘、不放
+//            return true;
+//        return false;
+//    }
     public static void main7(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String[] strs = bf.readLine().split(" ");
