@@ -1,5 +1,7 @@
 package com.swei.utils;
 
+import com.swei.ui.BaseClass;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -12,8 +14,7 @@ public class BusinessException extends RuntimeException {
         super();
     }
 
-
     public BusinessException(String message) {
-        super(message);
+        super(BaseClass.getR(message));
     }
 }

@@ -12,4 +12,6 @@ import com.swei.utils.BusinessException;
  */
 public interface UserService {
     User register(User user) throws BusinessException;
+
+    User login(String name, String password) throws BusinessException;
 }

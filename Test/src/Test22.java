@@ -37,7 +37,7 @@ class GenerateTest<T>{
 }
 public class Test22 {
 
-    public static void main(String[] args) {
+    public static void main12(String[] args) {
 //        ArrayList<? super B> arrayList1 = new ArrayList<>();
 //        //
 //        arrayList1.add(new A());

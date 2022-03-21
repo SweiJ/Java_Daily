@@ -5,6 +5,8 @@ import com.swei.service.UserService;
 import com.swei.utils.BusinessException;
 import com.swei.utils.UserIO;
 
+import java.util.UUID;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -13,11 +15,17 @@ import com.swei.utils.UserIO;
  * Time: 14:26
  */
 public class UserServiceImpl implements UserService {
+    UserIO userIO = new UserIO();
     @Override
     public User register(User user) throws BusinessException {
-        UserIO userIO = new UserIO();
         userIO.add(user);
-        userIO.writeUsers();
+//        userIO.writeUsers();
         return user;
+    }
+
+    @Override
+    public User login(String name, String password) {
+        // 登陆当前的用户名和密码是否在列表中
+        return new UserIO().userIsTrue(name, password);
     }
 }

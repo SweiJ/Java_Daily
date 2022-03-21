@@ -14,23 +14,19 @@ public class Welcome extends BaseClass {
         System.out.println(getR("info.welcome"));
         System.out.println(getR("info.login.reg"));
         System.out.println(getR("info.select"));
-        Boolean exit = true;
-        int num = input.nextInt();
-        input.nextLine();
-        while(exit) {
+        int num;
+        while((num = input.nextInt()) != 0) {
+            input.nextLine();
             switch (num) {
                 case 1 :
-
-                    exit = false;
+                    User login = new Login().login();
+                    getR("login.success");
+                    System.out.println("欢迎: " + login.getName());
                     break;
                 case 2 :
-                    exit = false;
                     // 注册
                     new Register().register();
                     System.out.println("reg.success");
-                    break;
-                case 0 :
-                    exit = false;
                     break;
                 default:
                     System.out.println(getR("input.error"));
