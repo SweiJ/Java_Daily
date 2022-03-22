@@ -12,7 +12,45 @@ import java.util.Scanner;
  * Time: 9:37
  */
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int count = 1;
+        for (int i = 1; i < n - 1; i++) {
+            if(arr[i] > arr[i - 1] && arr[i] > arr[i + 1] ||
+                    arr[i] < arr[i - 1] && arr[i] < arr[i + 1]) {
+                count++;
+                if(n - 3 != i){
+                    i++;
+                }
+            }
+        }
+        System.out.println(count);
+    }
+    public static void main3(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+
+        int end = s.length();
+        StringBuilder sb = new StringBuilder("");
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if(s.charAt(i) == ' ') {
+                sb.append(s, i + 1, end);
+                sb.append(" ");
+                end = i;
+            }
+            if(i == 0) {
+                sb.append(s, 0, end);
+                sb.append(" ");
+            }
+        }
+        System.out.println(sb);
+    }
+    public static void main2(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int len = 3*n;
