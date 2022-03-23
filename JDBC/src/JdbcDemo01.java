@@ -15,7 +15,6 @@ public class JdbcDemo01 {
         // 不需要此代码
 //        Class.forName("java.sql.Driver");
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/t1?characterEncoding=utf-8&useSSL=false");
-
     }
     public static void main(String[] args) throws SQLException {
         DataSource dataSource = new MysqlDataSource();
