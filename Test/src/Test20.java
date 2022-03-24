@@ -1,3 +1,5 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.util.*;
 
 /**
@@ -8,6 +10,47 @@ import java.util.*;
  * Time: 11:44
  */
 public class Test20 {
+
+    public static void main2(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int A, B, C;
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+
+        A = (a + c) / 2;
+        B = (b + d) / 2;
+        C = d - B;
+        if((A - B == a) && (B - C == b) && (A + B == c) && (B + C == d)) {
+            System.out.println(A + " " + C + "" + C);
+        } else {
+            System.out.println("No");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        String str = "0123456789ABCDEF";
+        StringBuilder sb = new StringBuilder("");
+        boolean flag = false;
+        if(m < 0){
+            m = -m;
+            flag = true;
+        }
+
+        while (m != 0) {
+            int t = m % n;
+            sb.append(str.charAt(t));
+            m = m / n;
+        }
+        String s = sb.reverse().toString();
+        if(flag) {
+            s = "-" + s;
+        }
+        System.out.println(s);
+    }
     //key是关键字  value是出现的次数
     public static Map<Integer,Integer> func1(int[] array) {
         Map<Integer,Integer> map = new HashMap<>();
@@ -34,7 +77,7 @@ public class Test20 {
         }
         return entries;
     }
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         int[] array = new int[1_0000];
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
