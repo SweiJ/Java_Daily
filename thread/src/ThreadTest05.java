@@ -56,6 +56,12 @@ public class ThreadTest05 {
             Random random = new Random();
             arr[i] = random.nextInt(100);
         }
+        new Thread() {
+            @Override
+            public void run() {
+                super.run();
+            }
+        };
 
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < arr.length; i+=2) {
