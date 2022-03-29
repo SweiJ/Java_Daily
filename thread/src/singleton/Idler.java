@@ -8,8 +8,6 @@ package singleton;
  * Time: 9:41
  */
 
-import java.util.IdentityHashMap;
-
 /**
  * 实现单例模式 懒汉模式
  * @author SweiPC
