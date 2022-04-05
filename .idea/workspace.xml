@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f9e9ad5-867b-4aab-b730-d9b2d58ebaf3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/draw/DrawCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/event_/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame/MyHero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame/MyPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame/TankGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame2/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame2/EmemyTank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame2/MyHero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame2/MyPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame2/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BattleCity/src/tankgame2/TankGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBC/src/JDBCTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Method/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/src/Test19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/IoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/DeleteDirectoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/bytestream/FileCopyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/bytestream/InputStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/bytestream/OutputStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/charstream/ReadFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/charstream/WriterFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/processingflow/BufferReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/processingflow/BufferWriterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/serialization/DeserializeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iostream/src/com/swei/serialization/SerializationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/Test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/TestOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/classinfo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/Field/FieldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/Field/ReflectAcquireTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/Field/ReflectFieldAcquire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/Field/ReflectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/Field/Relect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/annotation/AnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/annotation/Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/method/ReflectCallMethon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/method/ReflectMethodAcquire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/method/ReflectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflect/src/com/swei/variableLength/varLengthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socket/SocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socket/SocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socket/SocketTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socketTest/SocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socketTest/SocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socketTest/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socketthread/SocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socketthread/SocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socketthread/SocketThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/socketthread/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/udpsocket/SocketUDPRecive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketTest/src/com/swei/udpsocket/SocketUDPSend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/ThreadSafety.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/ThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/ThreadTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/ThreadTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/bank/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/bank/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/bank/AccountThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/synchronised/synTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EmailTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Method/Method.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="23VHzmDGYIS9TxvADM2QQC3UVjj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JDBC" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f9e9ad5-867b-4aab-b730-d9b2d58ebaf3" name="Changes" comment="" />
+      <created>1641812599093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641812599093</updated>
+      <workItem from="1641812600688" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

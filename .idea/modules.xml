@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayTest/ArrayTest.iml" filepath="$PROJECT_DIR$/ArrayTest/ArrayTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BattleCity/BattleCity.iml" filepath="$PROJECT_DIR$/BattleCity/BattleCity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookManageSystem/BookManageSystem.iml" filepath="$PROJECT_DIR$/BookManageSystem/BookManageSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Character/Character.iml" filepath="$PROJECT_DIR$/Character/Character.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class/Class.iml" filepath="$PROJECT_DIR$/Class/Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassTask/ClassTask.iml" filepath="$PROJECT_DIR$/ClassTask/ClassTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CouTest/src/CouTest.iml" filepath="$PROJECT_DIR$/CouTest/src/CouTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CourseTest/CourseTest.iml" filepath="$PROJECT_DIR$/CourseTest/CourseTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DouLinkList/DouLinkList.iml" filepath="$PROJECT_DIR$/DouLinkList/DouLinkList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gather/Gather.iml" filepath="$PROJECT_DIR$/Gather/Gather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaGit.iml" filepath="$PROJECT_DIR$/.idea/JavaGit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaTask/JavaTask.iml" filepath="$PROJECT_DIR$/JavaTask/JavaTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkList/LinkList.iml" filepath="$PROJECT_DIR$/LinkList/LinkList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Memory/Memory.iml" filepath="$PROJECT_DIR$/Memory/Memory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Method/Method.iml" filepath="$PROJECT_DIR$/Method/Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyArrayList/MyArrayList.iml" filepath="$PROJECT_DIR$/MyArrayList/MyArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CouTest/src/TestDemo/TestDemo.iml" filepath="$PROJECT_DIR$/CouTest/src/TestDemo/TestDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book/book.iml" filepath="$PROJECT_DIR$/book/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iostream/iostream.iml" filepath="$PROJECT_DIR$/iostream/iostream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflect/reflect.iml" filepath="$PROJECT_DIR$/reflect/reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socketTest/socketTest.iml" filepath="$PROJECT_DIR$/socketTest/socketTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
+    </modules>
+  </component>
+</project>

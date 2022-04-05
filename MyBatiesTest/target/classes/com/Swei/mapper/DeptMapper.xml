@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD com.Swei.mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Swei.mapper.DeptMapper">
+    <select id="selectAll" resultType="com.Swei.pojo.Dept">
+        select * from dept;
+    </select>
+
+    <insert id="insert">
+        insert into dept values (#{deptno}, #{dname}, #{loc})
+    </insert>
+    <select id="selectOne" resultType="com.Swei.pojo.Dept">
+        select * from dept where deptno=10;
+    </select>
+
+    <select id="selectMap" resultType="map">
+        select * from dept;
+    </select>
+</mapper>

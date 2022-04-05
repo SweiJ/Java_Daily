@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <bean id="userDaoImpl" class="org.example.example.dao.impl.UserDaoImpl">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="user" class="org.example.example.domain.SysUser">-->
+<!--        <property name="name" value="xiaozhang"/>-->
+<!--        <property name="age" value="22"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="userServiceImpl" class="org.example.example.service.impl.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDaoImpl" />-->
+<!--    </bean>-->
+    <context:component-scan base-package="org.example" />
+</beans>
