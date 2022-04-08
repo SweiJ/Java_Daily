@@ -12,6 +12,7 @@
         <module name="SpringAop-01-aspectJJ" />
         <module name="Spring-01" />
         <module name="Spring-02-di" />
+        <module name="spring-framework" />
         <module name="Spring-mybaties" />
         <module name="spring-05-anno" />
         <module name="spring-aop-home" />
@@ -29,6 +30,7 @@
       <module name="Spring-06-homework" target="1.7" />
       <module name="spring-aop-home" target="1.8" />
       <module name="spring-aop-homework" target="1.8" />
+      <module name="spring-framework" target="1.7" />
       <module name="Spring-mybaties" target="1.8" />
       <module name="SpringAop-01-aspectJJ" target="1.8" />
     </bytecodeTargetLevel>

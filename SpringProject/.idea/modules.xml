@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-05-anno/spring-05-anno.iml" filepath="$PROJECT_DIR$/spring-05-anno/spring-05-anno.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-aop-home/spring-aop-home.iml" filepath="$PROJECT_DIR$/spring-aop-home/spring-aop-home.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-aop-homework/spring-aop-homework.iml" filepath="$PROJECT_DIR$/spring-aop-homework/spring-aop-homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework/spring-framework.iml" filepath="$PROJECT_DIR$/spring-framework/spring-framework.iml" />
     </modules>
   </component>
 </project>

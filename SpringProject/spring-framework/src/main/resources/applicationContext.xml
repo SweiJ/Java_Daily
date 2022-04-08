@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="uMapper" class="org.example.dao.Impl.UserMapperImpl"/>
+
+    <bean id="uService" class="org.example.service.Impl.UsersServiceImpl" >
+        <property name="userMapper" ref="uMapper"/>
+    </bean>
+
+    <bean id="uController" class="org.example.controller.UserController">
+        <property name="usersService" ref="uService"/>
+    </bean>
+
+</beans>
