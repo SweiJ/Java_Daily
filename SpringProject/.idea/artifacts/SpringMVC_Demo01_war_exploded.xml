@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SpringMVC-Demo01:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringMVC_Demo01_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SpringMVC-Demo01/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SpringMVC-Demo01" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.2.8" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.3" />
+          <element id="library" level="project" name="Maven: junit:junit:4.11" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.28" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.7" />
+          <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.6" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.9" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.22" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.16" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.0.12.RELEASE" />
+          <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.6.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -16,6 +16,7 @@
         <module name="Spring-mybaties" />
         <module name="spring-05-anno" />
         <module name="spring-aop-home" />
+        <module name="SpringMVC-Demo01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="spring-framework" target="1.7" />
       <module name="Spring-mybaties" target="1.8" />
       <module name="SpringAop-01-aspectJJ" target="1.8" />
+      <module name="SpringMVC-Demo01" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
