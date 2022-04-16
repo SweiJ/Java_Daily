@@ -28,7 +28,7 @@ public class Test20 {
             System.out.println("No");
         }
     }
-    public static void main(String[] args) {
+    public static void main4(String[] args) {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
         int n = sc.nextInt();
