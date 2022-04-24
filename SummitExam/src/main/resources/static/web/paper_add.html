@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增试卷</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1 align="center">试卷新增</h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <label>试卷名称</label>
+            <input type="text" class="form-control" v-model="name">
+        </div>
+        <div class="col-sm-6">
+            <label>试卷总分</label>
+            <input type="number" class="form-control" v-model="score">
+        </div>
+
+
+    </div>
+    <br>
+    <label>请选择选择试题</label>
+    <hr>
+    <table class="table">
+        <thead>
+        <th>&nbsp;</th>
+        <th>试题编号</th>
+        <th>试题类型</th>
+        <th>试题内容</th>
+        <th>试题答案</th>
+        <th>试题分数</th>
+        </thead>
+        <tbody>
+        <tr v-for="x in list">
+            <th><input type="checkbox" :value="x.quId" v-model="selectId" /></th>
+            <td>{{x.quId}}</td>
+            <td>{{x.quType}}</td>
+            <td>{{x.quContent}}</td>
+            <td>{{x.quAnswer}}</td>
+            <td>{{x.quScore}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div align="center">
+        <span>一共{{totalPage}}页,当前第{{page}}页，共计{{total}}条数据</span>
+        <button class="btn btn-success btn-sm" @click="prePage">上一页</button>
+        <button class="btn btn-success btn-sm" @click="nextPage">下一页</button>
+
+    </div>
+    <br>
+    <div align="center">
+        <button class="btn btn-success btn-sm" @click="save">保存</button>
+    </div>
+
+</div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            list:[],
+            selectId:[],//选中试题的编号
+            page:1,
+            row:5,
+            totalPage:null,//总页数
+            total:null,//总条数
+            name:"",//试卷名称
+            score:100//试卷总分
+        },
+        methods:{
+            loadData:function () {//加载数据
+                var self = this;
+                $.ajax({
+                    url:"/paper-question/queryQuestionList",
+                    type:"get",
+                    data:{"page":self.page,"row":self.row},
+                    dataType:"json",
+                    success:function (rs) {
+                        console.log(rs)
+                        if(rs.success){
+                            self.list = rs.data.list;
+                            self.totalPage = rs.data.totalPage;
+                            self.total = rs.data.total;
+                        }else{
+                            alert(rs.message);
+                        }
+                    },
+                    error:function (err) {
+                        console.log(err)
+                    }
+                })
+            },
+            save:function () {//新增试卷
+                console.log(this.selectId);
+                var self = this;
+                $.ajax({
+                    url:"/paper-exam/add",
+                    type:"get",
+                    data:{"name":self.name,"score":self.score,"selectId":self.selectId},
+                    dataType:"json",
+                    success:function (rs) {
+                        console.log(rs)
+                    },
+                    error:function (err) {
+                        console.log(err)
+                    }
+                })
+            },
+            prePage:function () {//上一页
+                this.page--;
+                if(this.page<=0){
+                    this.page=1;
+                }
+                this.loadData();
+            },
+            nextPage:function () {//下一页
+                this.page++;
+                if(this.page>=this.totalPage){
+                    this.page = this.totalPage;
+                }
+                this.loadData();
+            }
+        },
+        mounted(){
+            this.loadData();
+        }
+    })
+</script>
+</html>

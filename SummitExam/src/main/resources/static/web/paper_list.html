@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>考试列表</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1 align="center">试卷列表</h1>
+        <div>
+            <button class="btn btn-success btn-sm" @click="add">新增试卷</button>
+        </div>
+        <table class="table">
+            <thead>
+
+                <th>试卷编号</th>
+                <th>试卷名称</th>
+                <th>试卷总分</th>
+                <th>操作</th>
+            </thead>
+            <tbody>
+                <tr v-for="x in list">
+
+                    <td>{{x.examId}}</td>
+                    <td>{{x.examTitle}}</td>
+                    <td>{{x.examScore}}</td>
+                    <td><button type="button" class="btn btn-success btn-sm" @click="startPaper(x)">开始考试</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            list:[]
+        },
+        methods:{
+            loadData:function () {//加载数据
+                var self = this;
+                $.ajax({
+                    url:"/paper-exam/queryPaperList",
+                    type:"get",
+                    dataType:"json",
+                    success:function (rs) {
+                        console.log(rs)
+                        if(rs.success){
+                            self.list = rs.data
+                        }else{
+                            alert(rs.message);
+                        }
+                    },
+                    error:function (err) {
+                        console.log(err)
+                    }
+                })
+            },
+            add:function () {//新增试卷
+                window.location.href="/web/paper_add.html";
+            },
+            startPaper:function (x) {
+                //本地存储试卷ID
+                localStorage.setItem("id",x.examId)
+                //打开试卷页面
+                window.location.href="/web/paper.html";
+            }
+        },
+        mounted(){
+            this.loadData();
+        }
+    })
+</script>
+</html>

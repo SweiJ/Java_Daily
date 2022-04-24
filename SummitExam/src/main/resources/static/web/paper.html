@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>在线考试倒计时界面</title>
+	<link href="../css/main.css" rel="stylesheet" type="text/css" />
+	<link href="../css/test.css" rel="stylesheet" type="text/css" />
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/jquery.countdown.min.js"></script>
+	<script src="../js/vue.js"></script>
+	<style>
+		.hasBeenAnswer {
+			background: #5d9cec;
+			color: #fff;
+		}
+		.reading h2 {
+			width: 100%;
+			margin: 20px 0 70px;
+			text-align: center;
+			line-height: 2;
+			font-size: 20px;
+			color: #59595b;
+		}
+		.reading h2 a {
+			text-decoration: none;
+			color: #59595b;
+			font-size: 20px;
+		}
+		.reading h2 a:hover {
+			color: #2183f1;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+
+	<h1 align="center">{{name}}</h1>
+	<h3 align="center">满分:{{score}} 分</h3>
+	<!--nr start-->
+	<div class="test_main">
+		<div class="nr_left">
+			<!-- 试卷部分 -->
+			<div class="test">
+				<!-- 交卷按钮 -->
+				<div class="test_title">
+					<p class="test_time">
+						<i class="icon iconfont">&#xe6fb;</i><b class="alt-1">01:40</b>
+					</p>
+					<font><input type="button" name="test_jiaojuan" value="交卷" @click="submitPaper"></font>
+				</div>
+				<!-- 单选题 部分开始-->
+				<div class="test_content">
+					<div class="test_content_title">
+						<h2>单选题</h2>
+						<p>
+							<span>共</span><i class="content_lit">{{signList.length}}</i><span>题，</span>
+							<span>合计</span><i class="content_fs">{{signList.length*10}}</i><span>分</span>
+						</p>
+					</div>
+				</div>
+				<!-- 单选题 题目内容 -->
+				<div class="test_content_nr">
+					<ul v-for="(x,index) in signList">
+						<li :id="['qu_0_'+(index+1)]">
+							<div class="test_content_nr_tt">
+								<!-- 题号 -->
+								<i>{{index+1}}</i>
+								<!-- 题分数 -->
+								<span>({{x.quScore}}分)</span>
+								<!-- 题干 -->
+								<font>{{x.quContent}}</font><b class="icon iconfont">&#xe881;</b>
+							</div>
+							<div class="test_content_nr_main">
+								<ul>
+									<li class="option">
+										<input type="radio" class="radioOrCheck"  :value="[x.quId+'#A']" :name="['sign'+index]"
+											    />
+										<label >
+											A.
+											<p class="ue" style="display: inline;">{{x.quAoption}}</p>
+										</label>
+									</li>
+
+									<li class="option">
+										<input type="radio" class="radioOrCheck"   :value="[x.quId+'#B']" :name="['sign'+index]"
+											    />
+										<label >
+											B.
+											<p class="ue" style="display: inline;">{{x.quBoption}}</p>
+										</label>
+									</li>
+
+									<li class="option">
+										<input type="radio" class="radioOrCheck"   :value="[x.quId+'#C']" :name="['sign'+index]"
+											    />
+										<label >
+											C.
+											<p class="ue" style="display: inline;">{{x.quCoption}}</p>
+										</label>
+									</li>
+
+									<li class="option">
+										<input type="radio" class="radioOrCheck"   :value="[x.quId+'#D']" :name="['sign'+index]"
+											  />
+										<label >
+											D.
+											<p class="ue" style="display: inline;">{{x.quDoption}}</p>
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 单选题 部分结束-->
+
+				<!-- 多选题 部分开始 -->
+				<div class="test_content">
+					<div class="test_content_title">
+						<h2>多选题</h2>
+						<p>
+							<span>共</span><i class="content_lit">{{moreList.length}}</i><span>题，</span>
+							<span>合计</span><i class="content_fs">{{moreList.length*10}}</i><span>分</span>
+						</p>
+					</div>
+				</div>
+				<div class="test_content_nr">
+					<ul v-for="(x,index) in moreList">
+						<li :id="['qu_1_'+(index+1)]">
+							<div class="test_content_nr_tt">
+								<!-- 题号 -->
+								<i>{{index+1}}</i>
+								<!-- 题分数 -->
+								<span>({{x.quScore}}分)</span>
+								<!-- 题干 -->
+								<font>{{x.quContent}}</font><b class="icon iconfont">&#xe881;</b>
+							</div>
+							<div class="test_content_nr_main">
+								<ul>
+									<li class="option">
+										<input type="checkbox" class="radioOrCheck" :no="x.quId"   value="A" :name="['more'+index]"
+											   />
+										<label >
+											A.
+											<p class="ue" style="display: inline;">{{x.quAoption}}</p>
+										</label>
+									</li>
+
+									<li class="option">
+										<input type="checkbox" class="radioOrCheck" :no="x.quId"  value="B" :name="['more'+index]"
+											 />
+										<label >
+											B.
+											<p class="ue" style="display: inline;">{{x.quBoption}}</p>
+										</label>
+									</li>
+
+									<li class="option">
+										<input type="checkbox" class="radioOrCheck"  :no="x.quId"  value="C" :name="['more'+index]"
+											   />
+										<label >
+											C.
+											<p class="ue" style="display: inline;">{{x.quCoption}}</p>
+										</label>
+									</li>
+
+									<li class="option">
+										<input type="checkbox" class="radioOrCheck" :no="x.quId"  value="D" :name="['more'+index]"
+											    />
+										<label >
+											D.
+											<p class="ue" style="display: inline;">{{x.quDoption}}</p>
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 多选题 部分结束-->
+
+				<!-- 判断题 部分结束-->
+				<div class="test_content">
+					<div class="test_content_title">
+						<h2>判断题</h2>
+						<p>
+							<span>共</span><i class="content_lit">{{judgeList.length}}</i><span>题，</span>
+							<span>合计</span><i class="content_fs">{{judgeList.length*10}}</i><span>分</span>
+						</p>
+					</div>
+				</div>
+				<div class="test_content_nr">
+					<ul v-for="(x,index) in judgeList">
+						<li :id="['qu_2_'+(index+1)]">
+							<div class="test_content_nr_tt">
+								<!-- 题号 -->
+								<i>{{index+1}}</i>
+								<!-- 题分数 -->
+								<span>({{x.quScore}}分)</span>
+								<!-- 题干 -->
+								<font>{{x.quContent}}</font><b class="icon iconfont">&#xe881;</b>
+							</div>
+							<div class="test_content_nr_main">
+								<ul>
+
+
+									<li class="option">
+										<input type="radio" class="radioOrCheck"   :value="[x.quId+'#√']" :name="['judge'+index]"
+										/>
+										<label >
+											√
+										</label>
+									</li>
+
+									<li class="option">
+										<input type="radio" class="radioOrCheck"   :value="[x.quId+'#×']" :name="['judge'+index]"
+										/>
+										<label >
+											×
+										</label>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 判断题 部分结束-->
+				<br><br><br><br>
+			</div>
+
+		</div>
+
+		<!-- 答题卡部分开始 -->
+		<div class="nr_right">
+			<div class="nr_rt_main">
+				<div class="rt_nr1">
+					<div class="rt_nr1_title">
+						<h1>
+							<i class="icon iconfont">&#xe692;</i>答题卡
+						</h1>
+						<p class="test_time">
+							<i class="icon iconfont">&#xe6fb;</i><b class="alt-1"></b>
+						</p>
+					</div>
+					<!-- 单选答题卡开始 -->
+					<div class="rt_content">
+						<div class="rt_content_tt">
+							<h2>单选题</h2>
+							<p>
+								<span>共</span><i class="content_lit">{{signList.length}}</i><span>题</span>
+							</p>
+						</div>
+
+						<div class="rt_content_nr answerSheet">
+							<ul >
+								<li v-for="(x,index) in signList">
+									<a :href="['#qu_0_'+(index+1)]">{{index+1}}</a>
+
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<!-- 单选答题卡结束 -->
+
+					<!-- 多选答题卡开始 -->
+					<div class="rt_content">
+						<div class="rt_content_tt">
+							<h2>多选题</h2>
+							<p>
+								<span>共</span><i class="content_lit">{{moreList.length}}</i><span>题</span>
+							</p>
+						</div>
+
+						<div class="rt_content_nr answerSheet">
+							<ul >
+								<li v-for="(x,index) in moreList">
+									<a :href="['#qu_1_'+(index+1)]">{{index+1}}</a>
+
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<!-- 多选答题卡结束 -->
+
+					<!-- 判断题卡开始 -->
+					<div class="rt_content">
+						<div class="rt_content_tt">
+							<h2>判断题</h2>
+							<p>
+								<span>共</span><i class="content_lit">{{judgeList.length}}</i><span>题</span>
+							</p>
+						</div>
+
+						<div class="rt_content_nr answerSheet">
+							<ul >
+								<li v-for="(x,index) in judgeList">
+									<a :href="['#qu_2_'+(index+1)]">{{index+1}}</a>
+
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<!-- 判断题卡结束 -->
+				</div>
+			</div>
+		</div>
+
+		<!-- 答题卡部分结束 -->
+	</div>
+</div>
+</body>
+<script>
+
+
+	//vue代码
+	new Vue({
+		el: ".main",
+		data: {
+			 name:"",//试卷名称
+			 score:0,//试卷分数
+			 signList:[],//单选题数据集
+			 moreList:[],//多选题数据集
+			 judgeList:[]//判断题数据集
+		},
+		methods: {
+			loadData: function () {//查询试卷
+				var self = this;
+				//从本地存储获取试卷Id
+				var id = localStorage.getItem("id");
+				$.ajax({
+					url: "/paper-exam/queryPaperById",
+					type: "get",
+					data:{"id":id},
+					dataType: "json",
+					success: function (rs) {
+
+						if (rs.success) {
+							self.name = rs.data.name;
+							self.score = rs.data.score;
+							self.signList = rs.data.signList;
+							self.moreList = rs.data.moreList;
+							self.judgeList = rs.data.judgeList;
+						} else {
+							alert(rs.message);
+						}
+					},
+					error: function (err) {
+						console.log(err)
+					}
+				})
+			},
+			submitPaper:function () {//交卷
+				var arr = new Array();
+				//单选题答案和题号
+				for(var i=0;i<this.signList.length;i++){
+					var a =$("input[name='sign"+i+"']:checked").val();
+					if(a!=undefined){
+						arr.push(a);
+					}
+
+				}
+				//多选题答案和题号
+				for(var i=0;i<this.moreList.length;i++){
+					var a="";
+					//题号
+					var no=""
+					$("input[name='more"+i+"']:checked").each(function () {
+						a+= $(this).val();
+						//获取题号
+						no = $(this).attr("no");
+					})
+					//拼接题型和题号
+
+					if(a!=""){
+						a = no+"#"+a;
+						arr.push(a);
+					}
+
+				}
+				//判断题答案和题号
+				for(var i=0;i<this.judgeList.length;i++){
+					var a =$("input[name='judge"+i+"']:checked").val();
+					if(a!=undefined){
+						arr.push(a);
+					}
+				}
+
+				if(arr.length==0){
+					alert("你没有做题！")
+				}else{
+					$.ajax({
+						url: "/paper-exam/submitPaper",
+						type: "get",
+						data:{"arr":arr},
+						dataType: "json",
+						success: function (rs) {
+							console.log(rs)
+							alert("你此次成绩是:"+rs.data+"分")
+
+						},
+						error: function (err) {
+							console.log(err)
+						}
+					})
+				}
+
+
+
+			}
+		},
+		created(){
+			this.loadData();
+
+		}
+
+	})
+
+
+	window.onload=function(){
+        $('.radioOrCheck').bind("click",function() {
+            var examId = $(this).parent().parent().parent().parent().attr('id'); /*/!*得到题目ID*!/*/
+            console.log("id="+examId)
+            /*/!*设置已答题*!/*/
+            $("a[href='#"+examId+"']").css("color","red")
+
+
+        });
+
+		//获取倒计时间(单位：毫秒)
+		var fiveSeconds = new Date().getTime() + 2000000;
+
+		$('.alt-1').countdown(fiveSeconds)
+				.on('update.countdown', function(event) { //时间更改事件
+					//设置倒计时时间格式
+					$(this).html(event.strftime('<span>%H:%M:%S</span>'));
+				})
+				.on('finish.countdown', function(event) {
+					alert("结束")
+				})
+	}
+
+</script>
+</html>
