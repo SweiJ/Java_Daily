@@ -2,7 +2,6 @@ package com.swei.summitexam.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.swei.summitexam.model.Paperuser;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * Created with IntelliJ IDEA.
