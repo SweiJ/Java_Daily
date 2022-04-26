@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -50,8 +51,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Map<String, Object> login(Paperuser paperuser, HttpServletRequest request) {
+    public Map<String, Object> login(Paperuser paperuser, HttpSession session) {
         Map<String, Object> map = new HashMap<>();
+
         QueryWrapper<Paperuser> qw = new QueryWrapper<>();
 
         qw.eq("user_name", paperuser.getUserName());
@@ -61,7 +63,6 @@ public class UserServiceImpl implements UserService {
             map.put("message", "登陆失败, 用户名或者密码错误");
             return map;
         } else {
-            request.getSession().setAttribute("user", paperuser.getUserName());
 //            session.setAttribute("pwd", paperuser.getPwd());
             map.put("success", true);
             map.put("message", paperuser.getUserName());

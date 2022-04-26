@@ -17,7 +17,7 @@ import java.util.Map;
 public interface UserService {
     Map<String, Object> adduser(Paperuser paperuser);
 
-    Map<String, Object> login(Paperuser paperuser, HttpServletRequest request);
+    Map<String, Object> login(Paperuser paperuser, HttpSession session);
 
     Map<String, Object> updatapwd(String userName, String oldpwd, String newpwd);
 
