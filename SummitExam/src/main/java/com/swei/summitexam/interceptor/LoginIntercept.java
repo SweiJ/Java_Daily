@@ -23,7 +23,7 @@ public class LoginIntercept implements HandlerInterceptor {
             return true;
         }
 
-        request.setAttribute("message", "请先登陆");
+        session.setAttribute("message", "请先登陆");
         request.getRequestDispatcher("/web/login.html").forward(request, response);
         return false;
     }
