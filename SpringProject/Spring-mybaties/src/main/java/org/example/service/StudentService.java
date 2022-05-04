@@ -11,7 +11,7 @@ import java.util.List;
  * Date: 2022-03-14
  * Time: 16:43
  */
-public interface StudentService {
+public interface StudentService  {
     int addStudent(Student student);
 
     List<Student> queryStudent();
