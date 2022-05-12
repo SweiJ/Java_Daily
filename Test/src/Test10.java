@@ -34,6 +34,6 @@ public class Test10 {
             Object next =  iterator.next();
             System.out.println(next);
         }
-        
+
     }
 }
