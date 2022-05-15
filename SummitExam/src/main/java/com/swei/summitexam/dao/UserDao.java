@@ -1,7 +1,11 @@
 package com.swei.summitexam.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.swei.summitexam.model.Paperuser;
+import com.swei.summitexam.model.PaperQuestion;
+import com.swei.summitexam.model.PaperUser;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,6 +14,8 @@ import com.swei.summitexam.model.Paperuser;
  * Date: 2022-04-24
  * Time: 14:15
  */
-public interface UserDao extends BaseMapper<Paperuser> {
+public interface UserDao extends BaseMapper<PaperUser> {
 
+    @Select("select * from paper_question")
+    List<PaperQuestion> queryQuestionList();
 }

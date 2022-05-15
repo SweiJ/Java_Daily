@@ -78,14 +78,14 @@
             loadData:function () {//加载数据
                 var self = this;
                 $.ajax({
-                    url:"/paper-question/queryQuestionList",
+                    url:"/paper-exam/queryQuestionList",
                     type:"get",
                     data:{"page":self.page,"row":self.row},
                     dataType:"json",
                     success:function (rs) {
                         console.log(rs)
                         if(rs.success){
-                            self.list = rs.data.list;
+                            self.list = rs.data;
                             self.totalPage = rs.data.totalPage;
                             self.total = rs.data.total;
                         }else{
@@ -103,10 +103,11 @@
                 $.ajax({
                     url:"/paper-exam/add",
                     type:"get",
-                    data:{"name":self.name,"score":self.score,"selectId":self.selectId},
+                    data:{"examTitle":self.name,"examScore":self.score,"selectId":self.selectId},
                     dataType:"json",
                     success:function (rs) {
                         console.log(rs)
+                        window.location.href="/web/paper_list.html";
                     },
                     error:function (err) {
                         console.log(err)

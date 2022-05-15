@@ -1,7 +1,9 @@
 package com.swei.summitexam.service;
 
-import com.swei.summitexam.model.Paperexam;
+import com.swei.summitexam.model.DataMessage;
+import com.swei.summitexam.model.PaperExam;
 
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
@@ -12,5 +14,14 @@ import java.util.Map;
  * Time: 18:05
  */
 public interface ExamService {
-    Map<String, Object> addexam(Paperexam paperexam);
+
+    DataMessage queryPaperList();
+
+    DataMessage queryQuestionList();
+
+    DataMessage add(PaperExam paperExam);
+
+    DataMessage queryPaperById(String id, HttpSession session);
+
+    DataMessage submitPaper(String[] arr, HttpSession session);
 }

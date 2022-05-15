@@ -2,6 +2,7 @@ package com.swei.summitexam.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
@@ -12,7 +13,8 @@ import lombok.Data;
  * Time: 10:14
  */
 @Data
-public class Paperuser {
+@TableName("paper_user")
+public class PaperUser {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
     private String userName;

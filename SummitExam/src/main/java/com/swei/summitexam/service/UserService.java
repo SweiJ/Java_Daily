@@ -1,11 +1,11 @@
 package com.swei.summitexam.service;
 
-import com.swei.summitexam.model.Paperuser;
-import org.springframework.stereotype.Service;
+import com.swei.summitexam.model.DataMessage;
+import com.swei.summitexam.model.PaperUser;
+import com.swei.summitexam.model.UserParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,11 +15,12 @@ import java.util.Map;
  * Time: 10:57
  */
 public interface UserService {
-    Map<String, Object> adduser(Paperuser paperuser);
+    DataMessage adduser(PaperUser paperuser);
 
-    Map<String, Object> login(Paperuser paperuser, HttpSession session);
+    DataMessage login(PaperUser paperuser, HttpSession session);
 
-    Map<String, Object> updatapwd(String userName, String oldpwd, String newpwd);
+//    Map<String, Object> updatapwd(String userName, String oldpwd, String newpwd);
+    DataMessage updatapwd(UserParam userParam);
 
-    Map<String, Object> layout(HttpServletRequest request);
+    DataMessage layout(HttpServletRequest request);
 }

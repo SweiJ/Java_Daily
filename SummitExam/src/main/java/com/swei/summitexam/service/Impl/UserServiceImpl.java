@@ -2,15 +2,15 @@ package com.swei.summitexam.service.Impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.swei.summitexam.dao.UserDao;
-import com.swei.summitexam.model.Paperuser;
+import com.swei.summitexam.model.DataMessage;
+import com.swei.summitexam.model.PaperUser;
+import com.swei.summitexam.model.UserParam;
 import com.swei.summitexam.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,80 +26,79 @@ public class UserServiceImpl implements UserService {
     UserDao userDao;
 
     @Override
-    public Map<String, Object> adduser(Paperuser paperuser) {
-        Map<String, Object> map = new HashMap<>();
+    public DataMessage adduser(PaperUser paperuser) {
+        DataMessage message = new DataMessage();
         if(paperuser.getUserName() == null || "".equals(paperuser.getUserName())) {
-            map.put("message", "用户名为空, 请输入用户名!");
-            return map;
+            message.setMessage("用户名为空, 请输入用户名!");
+            return message;
         }
         if(paperuser.getPwd() == null || "".equals(paperuser.getPwd())) {
-            map.put("message", "密码为空, 请输入用户名!");
-            return map;
+            message.setMessage("密码为空, 请输入用户名!");
+            return message;
         }
 
-        QueryWrapper<Paperuser> qw = new QueryWrapper<>();
+        QueryWrapper<PaperUser> qw = new QueryWrapper<>();
         qw.eq("user_name", paperuser.getUserName());
-        Paperuser paperuser1 = userDao.selectOne(qw);
+        PaperUser paperuser1 = userDao.selectOne(qw);
         if(paperuser1 == null) {
             userDao.insert(paperuser);
-            map.put("success", true);
-            return map;
+            message.setSuccess(true);
         } else {
-            map.put("message", "用户名重复, 请重新输入");
-            return map;
+            message.setMessage("用户名重复, 请重新输入");
         }
+        return message;
     }
 
     @Override
-    public Map<String, Object> login(Paperuser paperuser, HttpSession session) {
-        Map<String, Object> map = new HashMap<>();
+    public DataMessage login(PaperUser paperuser, HttpSession session) {
+        DataMessage message = new DataMessage();
 
-        QueryWrapper<Paperuser> qw = new QueryWrapper<>();
+        QueryWrapper<PaperUser> qw = new QueryWrapper<>();
 
         qw.eq("user_name", paperuser.getUserName());
         qw.eq("pwd", paperuser.getPwd());
-        Paperuser paperuser1 = userDao.selectOne(qw);
-        if(paperuser1 == null) {
-            map.put("message", "登陆失败, 用户名或者密码错误");
-            return map;
+        PaperUser paperuser1 = userDao.selectOne(qw);
+        if (paperuser1 == null) {
+            message.setMessage("登陆失败, 用户名或者密码错误");
         } else {
-//            session.setAttribute("pwd", paperuser.getPwd());
-            map.put("success", true);
-            map.put("message", paperuser.getUserName());
-            return map;
+            session.setAttribute("message", "登陆成功");
+            message.setSuccess(true);
+            message.setMessage(paperuser.getUserName());
         }
+        return message;
     }
 
     @Override
-    public Map<String, Object> updatapwd(String userName, String oldpwd, String newpwd) {
-        Map<String, Object> map = new HashMap<>();
-        QueryWrapper<Paperuser> qw = new QueryWrapper<>();
-        qw.eq("user_name", userName);
-        qw.eq("pwd", oldpwd);
+    public DataMessage updatapwd(UserParam userParam) {
+        DataMessage message = new DataMessage();
 
-        Paperuser paperuser = userDao.selectOne(qw);
+        QueryWrapper<PaperUser> qw = new QueryWrapper<>();
+        qw.eq("user_name", userParam.getUserName());
+        qw.eq("pwd", userParam.getOldpwd());
+
+        PaperUser paperuser = userDao.selectOne(qw);
         if (paperuser == null) {
-            map.put("message", "原密码输入错误");
-            return map;
+            message.setMessage("原密码输入错误");
         } else {
-            if(newpwd == null) {
-                map.put("message", "新密码为空, 请输入密码");
-                return map;
+            if (userParam.getNewpwd() == null || userParam.getNewpwd2() == null) {
+                message.setMessage("新密码为空, 请输入密码");
+            } else if (!userParam.getNewpwd().equals(userParam.getNewpwd2())) {
+                message.setMessage("密码不一致, 请重新输入!");
             } else {
-                Paperuser paperuser1 = new Paperuser();
-                paperuser1.setPwd(newpwd);
+                PaperUser paperuser1 = new PaperUser();
+                paperuser1.setPwd(userParam.getNewpwd());
                 userDao.update(paperuser1, qw);
-                map.put("message", "密码修改成功");
-                return map;
+                message.setMessage("密码修改成功");
             }
         }
+        return message;
     }
 
     @Override
-    public Map<String, Object> layout(HttpServletRequest request) {
-        Map<String, Object> map = new HashMap<>();
+    public DataMessage layout(HttpServletRequest request) {
+        DataMessage message = new DataMessage();
         request.getSession().invalidate();
-        map.put("message", "退出系统成功");
-        return map;
+        message.setMessage("退出系统成功");
+        return message;
     }
 }

@@ -361,10 +361,9 @@
 				//单选题答案和题号
 				for(var i=0;i<this.signList.length;i++){
 					var a =$("input[name='sign"+i+"']:checked").val();
-					if(a!=undefined){
+					if(a!=undefined) {
 						arr.push(a);
 					}
-
 				}
 				//多选题答案和题号
 				for(var i=0;i<this.moreList.length;i++){
@@ -387,7 +386,7 @@
 				//判断题答案和题号
 				for(var i=0;i<this.judgeList.length;i++){
 					var a =$("input[name='judge"+i+"']:checked").val();
-					if(a!=undefined){
+					if(a!=undefined) {
 						arr.push(a);
 					}
 				}
@@ -410,16 +409,11 @@
 						}
 					})
 				}
-
-
-
 			}
 		},
 		created(){
 			this.loadData();
-
 		}
-
 	})
 
 
@@ -429,8 +423,6 @@
             console.log("id="+examId)
             /*/!*设置已答题*!/*/
             $("a[href='#"+examId+"']").css("color","red")
-
-
         });
 
 		//获取倒计时间(单位：毫秒)
@@ -445,6 +437,5 @@
 					alert("结束")
 				})
 	}
-
 </script>
 </html>
