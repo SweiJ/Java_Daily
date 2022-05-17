@@ -15,7 +15,7 @@ public class Test10 {
     public static void main(String[] args) {
         HashMap<String, Integer> hashMap = new HashMap();
         hashMap.put("ja ck", 650);
-        hashMap.put("tom", 1200);
+        hashMap.put("to m", 1200);
         hashMap.put("smith", 2900);
         hashMap.replace("jack",650,2600);
 
