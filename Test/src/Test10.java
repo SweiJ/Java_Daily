@@ -16,7 +16,7 @@ public class Test10 {
         HashMap<String, Integer> hashMap = new HashMap();
         hashMap.put("ja ck", 650);
         hashMap.put("to m", 1200);
-        hashMap.put("smith", 2900);
+        hashMap.put("smi th", 2900);
         hashMap.replace("jack",650,2600);
 
         Set<String> strings = hashMap.keySet();
