@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/online-email/online-email.iml" filepath="$PROJECT_DIR$/online-email/online-email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-generator/online-generator.iml" filepath="$PROJECT_DIR$/online-generator/online-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-server/online-server.iml" filepath="$PROJECT_DIR$/online-server/online-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online_office.iml" filepath="$PROJECT_DIR$/online_office.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.logstash.logback:logstash-logback-encoder:7.1.1">
+    <CLASSES>
+      <root url="jar://C:/dev/apache-maven-3.8.4/mvn_resp/net/logstash/logback/logstash-logback-encoder/7.1.1/logstash-logback-encoder-7.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/dev/apache-maven-3.8.4/mvn_resp/net/logstash/logback/logstash-logback-encoder/7.1.1/logstash-logback-encoder-7.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/dev/apache-maven-3.8.4/mvn_resp/net/logstash/logback/logstash-logback-encoder/7.1.1/logstash-logback-encoder-7.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
