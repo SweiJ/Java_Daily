@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/blog_list.css" />
+</head>
+<body>
+    <div class="nav">
+        <img src="image/logo.png" alt="">
+        <sapn class="title">我的博客系统</sapn>
+        <div class="spacer"></div>
+        <a href="blog_list.html">主页</a>
+        <a href="blog_edit.html">写博客</a>
+        <a href="logout">注销</a>
+    </div>
+    <div class="container">
+        <div class="container-left">
+            <div class="card">
+                <img src="image/logo.png" alt="">
+                <h3></h3>
+                <a href="#">github地址</a>
+                <div class="counter">
+                    <span>文章</span>
+                    <span>分类</span>
+                </div>
+                <div class="counter">
+                    <span>2</span>
+                    <span>1</span>
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+<!--            <div class="blog">-->
+<!--                <div class="box">-->
+<!--                    <a href="login.html" >查看全文 &gt;&gt</a>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        function getBlogList() {
+            $.ajax({
+                type: 'get',
+                url: '/blog/blogs',
+                success: function (body) {
+                    let rightDiv = document.querySelector('.container-right');
+                    rightDiv.innerHTML = '';
+
+                    for (let blog of body) {
+                        let blogDiv = document.createElement('div');
+                        blogDiv.className = 'blog';
+
+                        let titleDiv = document.createElement('div');
+                        titleDiv.className = 'title';
+                        titleDiv.innerHTML = blog.title;
+                        blogDiv.appendChild(titleDiv);
+
+                        let dateDiv = document.createElement('div');
+                        dateDiv.className = 'date';
+                        dateDiv.innerHTML = blog.postTime;
+                        blogDiv.appendChild(dateDiv);
+
+                        let descDiv = document.createElement('div');
+                        descDiv.className = 'desc';
+                        descDiv.innerHTML = blog.content;
+                        blogDiv.appendChild(descDiv);
+
+                        let boxDiv = document.createElement('div');
+                        boxDiv.className= 'box';
+
+                        let a = document.createElement('a');
+                        a.innerHTML = '查看全文 &gt;&gt';
+                        a.href = 'blog_content.html?blogId=' + blog.blogId;
+                        boxDiv.appendChild(a);
+                        blogDiv.appendChild(boxDiv);
+                        rightDiv.appendChild(blogDiv);
+                    }
+                },
+                error: function () {
+                    alert("查询博客列表失败!!!")
+                }
+            });
+        }
+        getBlogList();
+    </script>
+
+    <script src="js/common.js"></script>
+    <script>
+        getUserInfo('blog_list.html');
+    </script>
+</body>
+</html>
