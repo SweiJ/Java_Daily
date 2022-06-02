@@ -56,16 +56,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private ResourceService resourceService;
 
+//    @Autowired
+//    private AuthFilter authFilter;
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
     }
 
-    @Override
-    public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers(
-                "/sec/login");
-    }
+//    @Override
+//    public void configure(WebSecurity web) throws Exception {
+//        web.ignoring().antMatchers(
+//                "/sec/login");
+//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -82,6 +85,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .antMatchers("/sec/**").authenticated()
                 .anyRequest().authenticated()
 
+                // 自定义权限配置
                 .withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
                     @Override
                     public <O extends FilterSecurityInterceptor> O postProcess(O o) {
@@ -96,7 +100,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .cacheControl();
 
         http.addFilterBefore(jwtAuthencationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
-
+        // 权限的配置
+//        http.addFilterBefore(authFilter, FilterSecurityInterceptor.class);
         // 添加自定义未授权和未登陆结果返回
         http.exceptionHandling()
                 .accessDeniedHandler(restfulAccessDeniedHandler)
