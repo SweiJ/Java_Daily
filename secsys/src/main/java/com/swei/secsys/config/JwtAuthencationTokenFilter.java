@@ -44,7 +44,7 @@ public class JwtAuthencationTokenFilter extends OncePerRequestFilter {
             // 利用token获取用户名
             String username = jwtTokenUtil.getUserNameFromToken(authToken);
             // token存在用户但未登陆
-            // SecurityContextHolder.getContext().getAuthentication() 获取前端提交的用户登陆信息
+            // SecurityContextHolder.getContext().getAuthentication() 获取上下文对象中认证信息
             if(null != username && null == SecurityContextHolder.getContext().getAuthentication()) {
                 // 自定义数据源获取用户信息
                 UserDetails userDetails = userDetailsService.loadUserByUsername(username);

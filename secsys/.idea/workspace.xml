@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00d93b23-1fe7-4906-bd29-8efcc81e9e00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/AuthFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test/out/test/Test/encryption/FenceCiper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/out/test/Test/encryption/FenceCiper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swei/secsys/controller/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swei/secsys/controller/DataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomUrlDecisionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomUrlDecisionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/JwtAuthencationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/JwtAuthencationTokenFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rude-java-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaGitee/online_office" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -107,7 +106,8 @@
       <updated>1654058929125</updated>
       <workItem from="1654058932163" duration="22658000" />
       <workItem from="1654131481596" duration="1210000" />
-      <workItem from="1654150078593" duration="9247000" />
+      <workItem from="1654150078593" duration="10453000" />
+      <workItem from="1654217557543" duration="14495000" />
     </task>
     <task id="LOCAL-00001" summary="secsys">
       <created>1654083049851</created>
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654083049851</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="secsys">
+      <created>1654166865989</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654166865989</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,30 +136,35 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/RestAuthoricationEntryPoint.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/RestfulAccessDeniedHandler.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomFilter.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomUrlDecisionManager.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/JwtAuthencationTokenFilter.java</url>
           <line>38</line>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/controller/DataController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/RestAuthoricationEntryPoint.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomFilter.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/RestfulAccessDeniedHandler.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomFilter.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

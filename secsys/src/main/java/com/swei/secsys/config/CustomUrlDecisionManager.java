@@ -7,6 +7,7 @@ import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
@@ -30,6 +31,9 @@ public class CustomUrlDecisionManager implements AccessDecisionManager {
         }
         for (ConfigAttribute configAttribute : collection) {
             for (GrantedAuthority authority : authentication.getAuthorities()) {
+                if("ROLE_ANONYMOUS".equals(authority.getAuthority())) {
+                    throw new AccessDeniedException("尚未登录, 请登录");
+                }
                 if(Objects.equals(authority.getAuthority(), configAttribute.getAttribute())) {
                     return;
                 }
