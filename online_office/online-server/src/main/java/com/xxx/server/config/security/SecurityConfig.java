@@ -63,7 +63,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 "/import/test",
                 "**/favicon.ico",
                 "/index",
-                "/captcha"
+                "/captcha",
+                "/ws/**"
         );
     }
 
