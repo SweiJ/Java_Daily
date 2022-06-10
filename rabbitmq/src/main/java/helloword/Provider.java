@@ -4,6 +4,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import org.junit.Test;
+import utils.RabbitMQUtils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
@@ -19,14 +20,17 @@ public class Provider {
     @Test
     public void testSendMessage() throws IOException, TimeoutException {
         // 创建连接mq的连接工厂对象
-        ConnectionFactory connectionFactory = new ConnectionFactory();
-        connectionFactory.setHost("192.168.80.10");
-        connectionFactory.setPort(5672);
-        connectionFactory.setVirtualHost("/ems");
-        connectionFactory.setUsername("ems");
-        connectionFactory.setPassword("123");
+//        ConnectionFactory connectionFactory = new ConnectionFactory();
+//        connectionFactory.setHost("192.168.80.10");
+//        connectionFactory.setPort(5672);
+//        connectionFactory.setVirtualHost("/ems");
+//        connectionFactory.setUsername("ems");
+//        connectionFactory.setPassword("123");
+//
+//        Connection connection = connectionFactory.newConnection();
 
-        Connection connection = connectionFactory.newConnection();
+
+        Connection connection = RabbitMQUtils.getConnection();
 
         // 获取连接中通道
         Channel channel = connection.createChannel();
@@ -43,7 +47,9 @@ public class Provider {
         // 参数1: 交换机名称  参数2: 队列名称  参数3: 传递消息额外设置  参数4: 消息的具体内容
         channel.basicPublish("", "hello", null, "hello rabbitmq".getBytes());
 
-        channel.close();
-        connection.close();
+
+        RabbitMQUtils.closeConnectionAndChanel(channel, connection);
+//        channel.close();
+//        connection.close();
     }
 }

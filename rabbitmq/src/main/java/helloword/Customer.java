@@ -2,6 +2,7 @@ package helloword;
 
 import com.rabbitmq.client.*;
 import org.junit.Test;
+import utils.RabbitMQUtils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
@@ -17,15 +18,16 @@ public class Customer {
 
     public static void main(String[] args) throws IOException, TimeoutException {
         // 创建连接工厂
-        ConnectionFactory connectionFactory = new ConnectionFactory();
-        connectionFactory.setHost("192.168.80.10");
-        connectionFactory.setPort(5672);
-        connectionFactory.setVirtualHost("/ems");
-        connectionFactory.setUsername("ems");
-        connectionFactory.setPassword("123");
+//        ConnectionFactory connectionFactory = new ConnectionFactory();
+//        connectionFactory.setHost("192.168.80.10");
+//        connectionFactory.setPort(5672);
+//        connectionFactory.setVirtualHost("/ems");
+//        connectionFactory.setUsername("ems");
+//        connectionFactory.setPassword("123");
+//
+//        Connection connection = connectionFactory.newConnection();
 
-        Connection connection = connectionFactory.newConnection();
-
+        Connection connection = RabbitMQUtils.getConnection();
         Channel channel = connection.createChannel();
 
         // 通道绑定对象
