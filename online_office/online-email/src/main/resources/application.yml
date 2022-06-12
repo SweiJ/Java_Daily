@@ -15,9 +15,9 @@ spring:
     password: guest
     host: 39.102.65.157
     port: 5672
-    listener:
-      simple:
-        acknowledge-mode: manual
+#    listener:
+#      simple:
+#        acknowledge-mode: manual
   redis:
     timeout: 10000ms
     host: 39.102.65.157
