@@ -6,19 +6,21 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xxx.server.mapper.EmployeeEcMapper;
 import com.xxx.server.mapper.EmployeeMapper;
-import com.xxx.server.pojo.Employee;
-import com.xxx.server.pojo.ResBean;
-import com.xxx.server.pojo.ResPageBean;
+import com.xxx.server.mapper.MailLogMapper;
+import com.xxx.server.pojo.*;
 import com.xxx.server.service.IEmployeeService;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * <p>
@@ -35,6 +37,10 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private MailLogMapper mailLogMapper;
+
     /**
      * 获取所有员工(员工)
      * @param currentPage
@@ -74,8 +80,25 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
         DecimalFormat decimalFormat = new DecimalFormat("##.00");
         employee.setContractTerm(Double.parseDouble(decimalFormat.format(days/365.00)));
         if(1 == employeeMapper.insert(employee)) {
+            // 发送消息
             Employee emp = employeeMapper.getEmployee(employee.getId()).get(0);
-            rabbitTemplate.convertAndSend("mail.welcome", emp);
+            // 数据库记录发送的消息
+            String msgId = UUID.randomUUID().toString();
+            MailLog mailLog = new MailLog();
+            mailLog.setMsgId(msgId)
+                    .setEid(employee.getId())
+                    .setStatus(0)
+                    .setRouteKey(MailConstants.MAIL_ROUTING_KEY_NAME)
+                    .setExchange(MailConstants.MAIL_EXCHANGE_NAME)
+                    .setCount(MailConstants.MAX_TRY_COUNT)
+                    .setTryTime(LocalDateTime.now().plusMinutes(MailConstants.MSG_TIMEOUT))
+                    .setCreateTime(LocalDateTime.now())
+                    .setUpdateTime(LocalDateTime.now());
+            mailLogMapper.insert(mailLog);
+
+            // 发送消息
+            rabbitTemplate.convertAndSend(MailConstants.MAIL_EXCHANGE_NAME, MailConstants.MAIL_ROUTING_KEY_NAME,
+                    emp, new CorrelationData(msgId));
 
             return ResBean.success("添加成功!");
         }
