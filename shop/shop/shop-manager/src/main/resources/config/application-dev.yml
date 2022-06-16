@@ -1,0 +1,57 @@
+server:
+  port: 9090
+  servlet:                            # 项目默认访问路径
+    context-path: /shop-manager
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123
+    # 指定druid连接池以及druid连接池配置
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 1       # 初始连接数
+      max-active: 20        # 最大连接数
+      max-idle: 20          # 最大空闲
+      min-idle: 1           # 最小空闲
+      max-wait: 60000       # 最长等待时间
+
+  freemarker:
+    cache: false
+    charset: UTF-8
+    content-type: text/html;charset=UTF-8
+    enabled: true
+    suffix: .ftl
+    template-loader-path: classpath:/views/
+    # 配置模板里是否可以直接取request的属性 request是别名
+    request-context-attribute: request
+    # 配置将request和session中的键值添加到
+    # AbstractTemplateView类的renderMergedOutputModel方法中的model这个Map参数中
+    expose-request-attributes: true
+    expose-spring-macro-helpers: true
+    # 配置模板里是否可以直接取session的属性
+    expose-session-attributes: true
+    settings:
+      tag_syntax: auto_detect              # 配置标签语法为启动, 页面可以将<>改为[], 为了区别html标签
+      template_update_delay: 0             # 模板更新时间, 单位秒
+      default_encoding: UTF-8              # 默认编码字符集
+      output_encoding: UTF-8               # 模板输出编码字符集
+      locale: zh_CN                        # 本地化配置
+      date_format: yyyy-MM-dd              # 日期格式化
+      time_format: HH:mm:ss                # 时间格式化
+      datetime_format: yyyy-MM-dd HH:mm:ss # 日期时间格式化
+      number_format: #.##                  # 数字格式化
+      boolean_format: true,false           # boolean格式化
+      template_exception_handler: html_debug
+
+mybatis:
+  # 配置Mybatis数据返回类型别名(默认别名是类名)
+  type-aliases-package: com.xxxx.maanger.pojo
+  # 配置Mybatis Mapper映射文件
+  mapper-locations: classpath:/mapper/*.xml
+# Mybatis SQL打印(方法接口所在的包, 不是Mapper.xml所在包)
+logging:
+  level:
+    com.xxxx.manager.mapper: debug
+
