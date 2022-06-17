@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.session:spring-session-core:2.6.3">
+    <CLASSES>
+      <root url="jar://C:/dev/apache-maven-3.8.4/mvn_resp/org/springframework/session/spring-session-core/2.6.3/spring-session-core-2.6.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/dev/apache-maven-3.8.4/mvn_resp/org/springframework/session/spring-session-core/2.6.3/spring-session-core-2.6.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/dev/apache-maven-3.8.4/mvn_resp/org/springframework/session/spring-session-core/2.6.3/spring-session-core-2.6.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
