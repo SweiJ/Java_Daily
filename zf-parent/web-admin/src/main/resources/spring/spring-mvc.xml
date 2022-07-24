@@ -64,11 +64,11 @@
         <property name="templateResolver" ref="templateResolver"></property>
 
         <!-- 添加spring security 标签支持：sec -->
-        <property name="additionalDialects">
-            <set>
-                <bean class="org.thymeleaf.extras.springsecurity5.dialect.SpringSecurityDialect" />
-            </set>
-        </property>
+<!--        <property name="additionalDialects">-->
+<!--            <set>-->
+<!--                <bean class="org.thymeleaf.extras.springsecurity5.dialect.SpringSecurityDialect" />-->
+<!--            </set>-->
+<!--        </property>-->
     </bean>
 
     <!--配置上传解析器
