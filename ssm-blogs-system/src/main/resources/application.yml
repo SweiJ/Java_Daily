@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/blog_sys?characterEncoding=utf-8&useSSL=false
+    password: jsw
+    username: root
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  type-aliases-package: com.swei.model
+
+logging:
+  level:
+    com.swei.model: debug
