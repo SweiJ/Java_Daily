@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        function login() {
+            var username = jQuery("#username").val();
+            var password = jQuery("#password").val();
+            jQuery.getJSON("/user/login",
+                {
+                    "username":username,
+                    "password":password
+                },
+                function (result) {
+                    if(result.code==200) {
+                        alert(result.message);
+                        window.location.href="blog_list.html";
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            );
+        }
+    </script>
+</head>
+<body>
+    <div class="nav">
+        <img src="image/logo.png" alt="">
+        <sapn class="title">我的博客系统</sapn>
+        <div class="spacer"></div>
+        <a href="blog_list.html">主页</a>
+        <a href="blog_edit.html">写博客</a>
+        <a href="#">注销</a>
+    </div>
+
+    <div class="login-container">
+<!--        <form action="login" method="post">-->
+            <div class="login-dialog">
+                <h3>登录</h3>
+                <div class="row">
+                    <span>用户名</span>
+                    <input id="username" name="username">
+                </div>
+                <div class="row">
+                    <span>密码</span>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="row">
+                    <input type="button" onclick="login()" id="submit" value="提交">
+                </div>
+            </div>
+<!--        </form>-->
+    </div>
+</body>
+</html>
