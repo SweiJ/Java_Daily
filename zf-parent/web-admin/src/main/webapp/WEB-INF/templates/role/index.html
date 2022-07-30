@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="item,it : ${list}">
+        <td class="text-center" th:text="${it.count}">11</td>
+        <td th:text="${item.roleName}">22</td>
+        <td th:text="${item.roleCode}">33</td>
+        <td th:text="${item.description}">33</td>
+        <td th:text="${#dates.format(item.createTime,'yyyy-MM-dd HH:mm:ss')}" >33</td>
+    </tr>
+</table>
+</body>
+</html>

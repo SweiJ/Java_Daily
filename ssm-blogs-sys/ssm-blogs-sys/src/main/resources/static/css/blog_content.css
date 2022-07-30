@@ -1,0 +1,21 @@
+.blog-content {
+    padding: 30px;
+}
+
+.blog-content h3 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.blog-content .date {
+    color:#008000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.blog-content p {
+    line-height: 20px;
+    font-size: 15px;
+    text-indent: 2em;
+    padding: 10px 0;
+}
