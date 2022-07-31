@@ -15,54 +15,78 @@
     <script src="js/vue.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <img src="image/logo.png" alt="">
-        <sapn class="title">我的博客系统</sapn>
-        <div class="spacer"></div>
-        <a href="blog_list.html">主页</a>
-        <a href="blog_edit.html">写博客</a>
-        <a href="logout">注销</a>
-    </div>
+    <div id="blogContent" style="height: 100%">
+        <div class="nav">
+            <img src="image/logo.png" alt="">
+            <sapn class="title">我的博客系统</sapn>
+            <div class="spacer"></div>
+            <a href="blog_list.html">主页</a>
+            <a href="blog_edit.html">写博客</a>
+            <a href="" @click="layout">注销</a>
+        </div>
 
-    <div id="blogContent" class="container">
-        <div class="container-left">
-            <div class="card">
-                <img src="image/logo.png" alt="">
-                <h3></h3>
-                <a href="#">github地址</a>
-                <div class="counter">
-                    <span>文章</span>
-                    <span>分类</span>
-                </div>
-                <div class="counter">
-                    <span>2</span>
-                    <span>1</span>
+        <div class="container">
+            <div class="container-left">
+                <div class="card">
+                    <img src="image/logo.png" alt="">
+                    <h3>{{username}}</h3>
+                    <a href="#">github地址</a>
+                    <div class="counter">
+                        <span>文章</span>
+                        <span>分类</span>
+                    </div>
+                    <div class="counter">
+                        <span>2</span>
+                        <span>1</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-right">
-            <div class="blog-content">
-                <!-- 博客标题 -->
-                <h3>{{title}}</h3>
-                <!-- 博客时间 -->
-                <div class="date">{{postTime}}</div>
-                <!-- 博客正文 -->
-                <div id="content" style="opacity: 80%">
-                    {{content}}
+            <div class="container-right">
+                <div class="blog-content">
+                    <!-- 博客标题 -->
+                    <h3>{{title}}</h3>
+                    <!-- 博客时间 -->
+                    <div class="date">{{postTime}}</div>
+                    <!-- 博客正文 -->
+                    <div id="content" style="opacity: 80%">
+                        {{content}}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script>
+        Vue.config.productionTip = false;
         new Vue({
             el:"#blogContent",
             data:{
                 title:'',
                 postTime:'',
-                content:''
+                content:'',
+                username:'',
             },
             methods:{
-                getBlogContent:function () {
+                getUserInfo() {
+                    let self = this;
+                    $.ajax({
+                        url: '/blogs/login',
+                        type: 'get',
+                        success: function (res) {
+                            if (res.o.userId && res.o.userId > 0) {
+                                console.log("当前用户登录成功! 用户名: " + res.o.username);
+                                self.username = res.o.username;
+                            } else {
+                                alert("当前您尚未登录, 请登录后再访问博客列表!");
+                                location.assign('login.html');
+                            }
+                        },
+                        error: function () {
+                            alert("当前您尚未登录! 请登录之后再访问博客列表");
+                            location.assign('login.html');
+                        }
+                    });
+                },
+                getBlogContent() {
                     const self = this;
                     const blogId = localStorage.getItem("blogId");
                     console.log(blogId);
@@ -85,83 +109,28 @@
                             }
                         }
                     })
-                }
+                },
+                layout() {
+                    $.ajax({
+                        url: "/user/layout",
+                        type: "get",
+                        success: function (res) {
+                            console.log(res.message);
+                            alert(res.message);
+                            window.location.href="login.html";
+                            // self.layout="login.html";
+                        },
+                        error: function () {
+                            alert("error");
+                        }
+                    })
+                },
             },
             mounted() {
                 this.getBlogContent();
+                this.getUserInfo();
             }
         })
-        // $(function () {
-        // function getBlogDetail() {
-        //     $.ajax({
-        //         type: 'get',
-        //         url: '/blog/blogs' + location.search,
-        //         success: function (body) {
-        //             let h3 = document.querySelector(".blog-content>h3")
-        //             h3.innerHTML = body.title;
-        //
-        //             let dateDiv = document.querySelector(".date")
-        //             dateDiv.innerHTML = body.postTime;
-        //
-        //             // let content = document.querySelector("#content")
-        //             // content.innerHTML = body.content;
-        //             editormd.markdownToHTML('content', {
-        //                 markdown: body.content
-        //             });
-        //         }
-        //     })
-        // }
-
-        // getBlogDetail();
-
-        function getAuthorInfo(user) {
-            $.ajax({
-                type: 'get',
-                url: '/blog/authorInfo' + location.search,
-                success: function (body) {
-                    if(body.username) {
-
-                        changeUserName(body.username);
-
-                        if(body.username == user.username) {
-                            let navDiv = document.querySelector('.nav');
-                            let a = document.createElement('a');
-                            a.innerHTML = '删除';
-                            a.href = 'blogDelete' + location.search;
-                            navDiv.appendChild(a);
-                        }
-                    } else {
-                        console.log("获取作者信息失败! " + body.reason);
-                    }
-                }
-            })
-        }
-        function getUserInfo() {
-            $.ajax({
-                type: 'get',
-                url: '/blog/login',
-                success: function (body) {
-                    if (body.userId && body.userId > 0) {
-                        console.log("当前用户登录成功! 用户名: " + body.username);
-                        getAuthorInfo(body);
-                    } else {
-                        alert("当前您尚未登录, 请登录后再访问博客列表!");
-                        location.assign('login.html');
-                    }
-                },
-                error: function () {
-                    alert("当前您尚未登录! 请登录之后再访问博客列表");
-                    location.assign('login.html');
-                }
-            });
-        }
-
-        // getUserInfo();
-
-        function changeUserName(username) {
-            let h3 = document.querySelector('.card>h3');
-            h3.innerHTML = username;
-        }
     </script>
 
 </body>

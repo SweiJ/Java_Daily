@@ -11,54 +11,79 @@
     <script src="js/vue.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <img src="image/logo.png" alt="">
-        <sapn class="title">我的博客系统</sapn>
-        <div class="spacer"></div>
-        <a href="blog_list.html">主页</a>
-        <a href="blog_edit.html">写博客</a>
-        <a href="javascript:void(0)" onclick="layout()">注销</a>
-    </div>
-    <div id="bloglist" class="container">
-        <div class="container-left">
-            <div class="card">
-                <img src="image/logo.png" alt="">
-                <h3></h3>
-                <a href="#">github地址</a>
-                <div class="counter">
-                    <span>文章</span>
-                    <span>分类</span>
-                </div>
-                <div class="counter">
-                    <span>2</span>
-                    <span>1</span>
-                </div>
-            </div>
+    <div id="bloglist" style="height: 100%">
+        <div class="nav">
+            <img src="image/logo.png" alt="">
+            <sapn class="title">我的博客系统</sapn>
+            <div class="spacer"></div>
+            <a href="blog_list.html">主页</a>
+            <a href="blog_edit.html">写博客</a>
+            <a href="" @click="layout">注销</a>
         </div>
 
-        <div class="container-right">
-            <div class="blog">
-                <ul style="list-style-type: none">
-                    <li v-for="x in contents">
-                        <div class="title">{{x.title}}</div><br>
-                        <div class="date">{{x.postTime}}</div><br>
-                        <div class="desc">{{x.content}}</div><br>
-                        <div class="box">
-                            <a  href="javascript:void(0)" @click="viewText(x)">查看全文 &gt;&gt</a>
-                        </div>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="container-left">
+                <div class="card">
+                    <img src="image/logo.png" alt="">
+                    <h3>{{username}}</h3>
+                    <a href="#">github地址</a>
+                    <div class="counter">
+                        <span>文章</span>
+                        <span>分类</span>
+                    </div>
+                    <div class="counter">
+                        <span>2</span>
+                        <span>1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-right">
+                <div class="blog">
+                    <ul style="list-style-type: none">
+                        <li v-for="x in contents">
+                            <div class="title">{{x.title}}</div><br>
+                            <div class="date">{{x.postTime}}</div><br>
+                            <div class="desc">{{x.content}}</div><br>
+                            <div class="box">
+                                <a  href="javascript:void(0)" @click="viewText(x)">查看全文 &gt;&gt</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
     <script>
         new Vue({
             el:"#bloglist",
             data:{
-                contents:[]
+                contents:[],
+                username:''
             },
             methods: {
-                blogList: function () {
+                getUserInfo() {
+                    let self = this;
+                    $.ajax({
+                        url: '/blogs/login',
+                        type: 'get',
+                        success: function (res) {
+                            if (res.o.userId && res.o.userId > 0) {
+                                console.log("当前用户登录成功! 用户名: " + res.o.username);
+                                self.username = res.o.username;
+                            } else {
+                                alert("当前您尚未登录, 请登录后再访问博客列表!");
+                                location.assign('login.html');
+                            }
+                        },
+                        error: function () {
+                            alert("当前您尚未登录! 请登录之后再访问博客列表");
+                            location.assign('login.html');
+                        }
+                    });
+                },
+                blogList() {
                     let self = this;
                     $.ajax({
                         url: '/blogs/bloglist',
@@ -75,6 +100,20 @@
                         }
                     })
                 },
+                layout() {
+                    $.ajax({
+                        url: "/user/layout",
+                        type: "get",
+                        success: function (res) {
+                            console.log(res.message);
+                            alert(res.message);
+                            window.location.href="login.html";
+                        },
+                        error: function () {
+                            alert("error");
+                        }
+                    })
+                },
                 viewText: function (x) {
                     localStorage.setItem("blogId", x.blogId);
                     window.location.href = "blog_content.html";
@@ -82,75 +121,9 @@
             },
             mounted() {
                 this.blogList();
-            },
+                this.getUserInfo();
+            }
         })
-        function layout() {
-            $.ajax({
-                url: "/user/layout",
-                type: "get",
-                success: function (res) {
-                    console.log(res.message);
-                    alert(res.message);
-                    window.location.href="login.html";
-                },
-                error: function () {
-                    alert("error");
-                }
-            })
-        }
     </script>
-
-
-<!--    <script>-->
-<!--        function getBlogList() {-->
-<!--            $.ajax({-->
-<!--                type: 'get',-->
-<!--                url: '/blogs/bloglist',-->
-<!--                success: function (body) {-->
-<!--                    let rightDiv = document.querySelector('.container-right');-->
-<!--                    rightDiv.innerHTML = '';-->
-
-<!--                    for (let blog of body) {-->
-<!--                        let blogDiv = document.createElement('div');-->
-<!--                        blogDiv.className = 'blog';-->
-
-<!--                        let titleDiv = document.createElement('div');-->
-<!--                        titleDiv.className = 'title';-->
-<!--                        titleDiv.innerHTML = blog.o.title;-->
-<!--                        blogDiv.appendChild(titleDiv);-->
-
-<!--                        let dateDiv = document.createElement('div');-->
-<!--                        dateDiv.className = 'date';-->
-<!--                        dateDiv.innerHTML = blog.o.postTime;-->
-<!--                        blogDiv.appendChild(dateDiv);-->
-
-<!--                        let descDiv = document.createElement('div');-->
-<!--                        descDiv.className = 'desc';-->
-<!--                        descDiv.innerHTML = blog.o.content;-->
-<!--                        blogDiv.appendChild(descDiv);-->
-
-<!--                        let boxDiv = document.createElement('div');-->
-<!--                        boxDiv.className= 'box';-->
-
-<!--                        let a = document.createElement('a');-->
-<!--                        a.innerHTML = '查看全文 &gt;&gt';-->
-<!--                        a.href = 'blog_content.html?blogId=' + blog.o.blogId;-->
-<!--                        boxDiv.appendChild(a);-->
-<!--                        blogDiv.appendChild(boxDiv);-->
-<!--                        rightDiv.appendChild(blogDiv);-->
-<!--                    }-->
-<!--                },-->
-<!--                error: function () {-->
-<!--                    alert("查询博客列表失败!!!")-->
-<!--                }-->
-<!--            });-->
-<!--        }-->
-<!--        getBlogList();-->
-<!--    </script>-->
-
-<!--    <script src="js/common.js"></script>-->
-<!--    <script>-->
-<!--        getUserInfo('blog_list.html');-->
-<!--    </script>-->
 </body>
 </html>
