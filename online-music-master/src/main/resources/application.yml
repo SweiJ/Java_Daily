@@ -20,3 +20,18 @@ logging:
 
 mybatis:
   mapper-locations: classpath:mapper/**Mapper.xml
+
+
+music:
+  local:
+    path: D:/music/
+
+jwt:
+  # Jwt存储的请求头
+  tokenHeader: Authorization
+  # Jwt加密秘钥
+  secret: online-music
+  # Jwt 的超期限时间（60*60）*24
+  expiration: 604800
+  # Jwt负载中拿到开头
+  tokenHead: Bearer

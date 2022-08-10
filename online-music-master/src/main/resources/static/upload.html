@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+    <!-- <script src="js/bootstrap.min.js"></script>-->
+    <!--导入vue.js-->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<!--enctype="multipart/form-data"-->
+<!--<form method="POST" enctype="multipart/form-data" action="/music/upload">-->
+<!--    文件上传：<input type="file" name="filename"/>-->
+<!--    歌手名: <label>-->
+<!--    <input type="text" name="singer" placeholder="请输入歌手名"/>-->
+<!--    </label>-->
+<!--    <input type="submit" value="上传"/>-->
+<!--</form>-->
+
+    <div id="upload">
+        文件上传：<input type="file" name="filename" @change="getFile($event,'filename')"/>-->
+        歌手名: <label>
+        <input type="text" name="singer" v-model="singerName" placeholder="请输入歌手名"/>
+        </label>
+        <input type="button" @click="submitForm($event)" value="上传"/>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: "#upload",
+            data: {
+                singerName: '',
+                formData: new FormData(),
+            },
+            methods: {
+                getFile(event, input_file_name) {
+                    this.formData.append(input_file_name, event.target.files[0]);
+                    console.log(event.target.files[0]);
+                    console.log(this.formData);
+                },
+                submitForm(event) {
+                    event.preventDefault();
+                    let data = this.formData;
+                    let singer = this.singerName;
+                    // let config = {
+                    //     headers: {
+                    //         'Content-Type': 'multipart/from-data'
+                    //     }
+                    // };
+                    console.log(data);
+                    console.log(singer);
+                    data.append("singer", singer);
+                    $.ajax({
+                        url: '/music/upload',
+                        // data: { "singer": singer, "filename": data},
+                        data: data,
+                        type: 'POST',
+                        cache: false,
+                        processData:false,//默认值: true。默认情况下，通过data选项传递进来的数据，如果是一个对象(技术上讲只要不是字符串)，都会处理转化成一个查询字符串，以配合默认内容类型 “application/x-www-form-urlencoded”。如果要发送 DOM 树信息或其它不希望转换的信息，请设置为 false
+                        contentType:false,//避免 JQuery 对其操作，从而失去分界符，而使服务器不能正常解析文件
+                        // contentType: 'multipart/from-data',
+                        success:function (res) {
+                            console.log(res);
+                            if(res.status===0) {
+                                alert(res.message);
+                                window.location.href="list.html";
+                            }else {
+                                alert(res.message);
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+</html>
