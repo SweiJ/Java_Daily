@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swei.music.mapper.RoleMapper">
+
+
+    <select id="getRoles" resultType="com.swei.music.model.Role">
+        SELECT
+            r.id, r.`name`
+        FROM
+            user_role ur, role r
+        where
+            ur.roleid = r.id AND ur.userid = #{id}
+    </select>
+
+</mapper>

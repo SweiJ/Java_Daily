@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.swei.music.mapper.LoveMusicMapper">
+    <delete id="delLoveMusic">
+        delete from lovemusic where user_id = #{userId} and music_id = #{musicId}
+    </delete>
+    <delete id="delLoveMusicByMusicId">
+        delete from lovemusic where music_id = #{musicId}
+    </delete>
+
+    <!--根据用户ID和音乐ID查询收藏的音乐 -->
+    <select id="getLoveMusicByMusicIdAndUserId" resultType="com.swei.music.model.Music">
+        select * from lovemusic where user_id=#{userId} and music_id=#{musicId}
+    </select>
+    <insert id="insertLoveMusic">
+        insert into lovemusic(user_id,music_id) values(#{userId},#{musicId})
+    </insert>
+
+    <resultMap id="BaseMap1" type="com.swei.music.model.Music">
+        <id column="id" property="id" />
+        <id column="title" property="title" />
+        <id column="singer" property="singer" />
+        <id column="time" property="time" />
+        <id column="url" property="url" />
+        <id column="userid" property="userid" />
+    </resultMap>
+    <select id="findLoveMusicByUserId" resultMap="BaseMap1">
+        select m.* from lovemusic lm,music m where m.id = lm.music_id and lm.user_id=#{userId}
+    </select>
+    <resultMap id="BaseMap2" type="com.swei.music.model.Music">
+        <id column="id" property="id" />
+        <id column="title" property="title" />
+        <id column="singer" property="singer" />
+        <id column="time" property="time" />
+        <id column="url" property="url" />
+        <id column="userid" property="userid" />
+    </resultMap>
+    <select id="findLoveMusicBykeyAndUID" resultMap="BaseMap2">
+        select m.* from lovemusic lm,
+                        music m where m.id = lm.music_id and lm.user_id=#{userId} and title like concat('%',#{musicName},'%')
+    </select>
+
+</mapper>
