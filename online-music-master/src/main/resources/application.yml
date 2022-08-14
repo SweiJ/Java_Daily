@@ -35,3 +35,44 @@ jwt:
   expiration: 604800
   # Jwt负载中拿到开头
   tokenHead: Bearer
+
+secure:
+  ignored:
+    urls: #安全路径白名单
+      - /index
+      - /user/login
+      - /toList
+      - /css/**
+      - /fonts/**
+      - /images/**
+      - /js/**
+      - /player/**
+#      - /**/*.html
+#      - /**/*.js
+#      - /**/*.css
+#      - /**/*.png
+#      - /favicon.ico
+#      - /actuator/**
+#      - /druid/**
+#      - /admin/login
+
+#sa-token配置
+sa-token:
+  # token名称 (同时也是cookie名称)
+  token-name: sa-token
+  # token有效期，单位s 默认30天, -1代表永不过期
+  timeout: 2592000
+  # token临时有效期,单位s 默认15分钟，15分钟不操作token过期
+  activity-timeout: 900
+  # 是否允许同一账号并发登录 (为true时允许一起登录, 为false时新登录挤掉旧登录)
+  is-concurrent: false
+  # 在多人登录同一账号时，是否共用一个token (为true时所有登录共用一个token, 为false时每次登录新建一个token)
+  is-share: false
+  # token风格
+  token-style: random-32
+  # 是否输出操作日志
+  is-log: false
+  # 是否从cookie里读取token
+  is-read-cookie: false
+  #是否从请求体里读取token
+  is-read-body: false

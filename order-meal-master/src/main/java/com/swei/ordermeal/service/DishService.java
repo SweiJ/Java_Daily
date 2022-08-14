@@ -38,4 +38,12 @@ public interface DishService extends IService<Dish> {
      * @param ids
      */
     void deleteDishById(List<Long> ids);
+
+    /**
+     * 修改状态信息
+     * @param status
+     * @param ids
+     */
+    void updateSalesStatus(String status, List<Long> ids);
+
 }

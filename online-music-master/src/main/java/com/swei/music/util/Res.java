@@ -16,6 +16,4 @@ public class Res <T>{
     private int status;
     private String message;
     private T data;
-
-
 }

@@ -151,11 +151,7 @@ public class DishController {
                                        @RequestParam List<Long> ids){
         log.info(ids.toString());
 
-        for (Long id : ids) {
-            Dish dish = dishService.getById(id);
-            dish.setStatus(Integer.valueOf(status));
-            dishService.updateById(dish);
-        }
+        dishService.updateSalesStatus(status, ids);
         return R.success("成功!");
     }
 }

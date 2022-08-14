@@ -1,6 +1,7 @@
 package com.swei.ordermeal.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.swei.ordermeal.dto.SetmealDto;
 import com.swei.ordermeal.model.Setmeal;
 
 /**
@@ -12,4 +13,10 @@ import com.swei.ordermeal.model.Setmeal;
  * @author SweiPC
  */
 public interface SetmealService extends IService<Setmeal> {
+    /**
+     * 新增套餐
+     * @param setmealDto
+     */
+    void saveWithDish(SetmealDto setmealDto);
+
 }

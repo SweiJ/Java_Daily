@@ -5,12 +5,13 @@
     <select id="getResource" resultType="com.swei.music.model.Resource">
         select * from resource where type = 0
     </select>
-    <select id="getResourceIdsByUserId" resultType="java.lang.Long">
+    <select id="getResourceByUserId" resultType="com.swei.music.model.Resource">
         SELECT
-            rr.resourceid
+            res.*
         FROM
             user_role ur
                 INNER JOIN role_resource rr ON ur.roleid = rr.roleid
+                INNER JOIN resource res ON rr.resourceid = res.id
         WHERE
             ur.userid = #{id}
     </select>

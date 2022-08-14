@@ -1,5 +1,6 @@
 package com.swei.music.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.swei.music.model.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -12,7 +13,7 @@ import org.apache.ibatis.annotations.Param;
  * Time: 20:14
  */
 @Mapper
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User> {
 
     /**
      * 根据用户名查找用户
