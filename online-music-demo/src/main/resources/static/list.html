@@ -25,6 +25,8 @@
     <!-- 3. 导入bootstrap的js文件 -->
    <!-- <script src="js/bootstrap.min.js"></script>-->
     <!--导入vue.js-->
+    <script src="js/axios.min.js"></script>
+    <script src="js/api/request.js"></script>
     <script src="js/vue.js"></script>
     <style type="text/css">
         td, th {
@@ -81,6 +83,7 @@
             methods: {
                 musicList(musicName) {
                     let self = this;
+                    axios.
                     $.ajax({
                         url: '/music/getmusic',
                         type: 'get',
