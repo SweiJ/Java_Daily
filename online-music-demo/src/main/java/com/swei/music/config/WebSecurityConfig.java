@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -22,6 +23,7 @@ import org.springframework.web.cors.CorsUtils;
  * @author SweiPC
  */
 @Configuration
+@EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -43,9 +45,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers(
-                "/index",
-                "/user/login",
+        web.ignoring().mvcMatchers(
+//                "/static/**"
+                "/login.html",
+                "/list.html",
+                "/loveMusic.html",
+                "/upload.html",
                 "/css/**",
                 "/fonts/**",
                 "/images/**",
@@ -56,8 +61,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests()
-                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
+        http.csrf().disable()
+                .authorizeHttpRequests()
+//                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
+                .antMatchers("/index","/user/login").permitAll()
                 // 其他资源都要认证
                 .anyRequest().authenticated()
                 .and()
@@ -65,11 +72,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .headers()
                 .cacheControl();
                 // 开启表单登录
-//                .and().formLogin()
+
+        http.formLogin()
                 // 登录页
-//                .loginPage("/index")
+                .loginPage("/index")
                 // 登录请求路径
-//                .loginProcessingUrl("/user/login");
+                .loginProcessingUrl("/user/login");
                 // 登录成功处理
 //                .successHandler(new MyAuthenticationSuccessHandler())
                 // 登录失败处理
@@ -80,9 +88,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.exceptionHandling()
                 .accessDeniedHandler(restfulAccessDeniedHandler)
                 .authenticationEntryPoint(restAuthoricationEntryPoint);
-        http.csrf().disable()
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+//        http.csrf().disable()
+//                .sessionManagement()
+//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
 
     @Bean

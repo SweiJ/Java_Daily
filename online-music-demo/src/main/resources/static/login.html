@@ -8,75 +8,70 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>音乐播放器登录页面</title>
 
-	<style>
-		#body{
-			background-image: url("/images/3.png");
-			/*background-size:100% 100%;
-			background-attachment: fixed;*/
-	}
-	</style>
+	  <!--图标-->
+	  <link rel="shortcut icon" href="/favicon.ico">
+	  <link rel="stylesheet" href="js/element-ui/index.css" />
+	  <link rel="stylesheet" href="css/common.css">
+	  <link rel="stylesheet" href="css/login.css">
+	  <!--图标样式-->
+	  <link rel="stylesheet" href="css/icon/iconfont.css" />
+	  <style>
+		  .body{
+			  min-width: 1366px;
+		  }
+	  </style>
 
   </head>
-  <body id="body">
-  	<div id="loginApp" class="container" style="width: 400px;margin-top: 110px;background-color: rgba(255,255,255,0.8)" :rules="loginRules">
-  		<h3 style="text-align: center;">管理员登录</h3>
-<!--        <form action="login" method="post">-->
-	      <div class="form-group" >
-	        <label for="user">用户名：</label>
-	        <input type="text" name="username" class="form-control" id="user" v-model:value="loginForm.username" placeholder="请输入用户名"/>
-	      </div>
-	      
-	      <div class="form-group">
-	        <label for="password">密码：</label>
-	        <input type="password" name="password" class="form-control" id="password" v-model:value="loginForm.password" placeholder="请输入密码"/>
-	      </div>
-
-	      <hr/>
-	      <div class="form-group" style="text-align: center;"><!--class="form-group"-->
-	        <input style="width: 200px;height: 40px" id="submit" class="btn btn btn-primary" type="button" @click="login" value="登录" >
+  <body>
+  <div class="login" id="login-app">
+	  <div class="login-box">
+		  <img src="images/3.png" alt="">
+		  <div class="login-form">
+			  <el-form ref="loginForm" :model="loginForm" :rules="loginRules" >
+				  <div class="login-form-title">
+					  <img src="images/logo.png" style="width:139px;height:42px;" alt="" />
+				  </div>
+				  <el-form-item prop="username">
+					  <el-input v-model="loginForm.username" type="text" auto-complete="off" placeholder="账号" maxlength="20"
+								prefix-icon="iconfont icon-user" />
+				  </el-form-item>
+				  <el-form-item prop="password">
+					  <el-input v-model="loginForm.password" type="password" placeholder="密码" prefix-icon="iconfont icon-lock" maxlength="20"
+								@keyup.enter.native="handleLogin" />
+				  </el-form-item>
+				  <el-form-item style="width:100%;">
+					  <el-button :loading="loading" class="login-btn" size="medium" type="primary" style="width:100%;"
+								 @click.native.prevent="handleLogin">
+						  <span v-if="!loading">登录</span>
+						  <span v-else>登录中...</span>
+					  </el-button>
+				  </el-form-item>
+			  </el-form>
 		  </div>
-<!--	  	</form>-->
-		<!-- 出错显示的信息框 -->
-	  	<div class="alert alert-warning alert-dismissible" role="alert">
-		  <button type="button" class="close" data-dismiss="alert" >
-		  	<span>&times;</span>
-		  </button>
-		   <strong id="message">您尚未进行登录，请您登录!</strong>
-		</div>
-  	</div>
+	  </div>
+  </div>
 
-	<!-- 1. 导入CSS的全局样式 -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<!-- 2. jQuery导入，建议使用1.9以上的版本 -->
-	<!--<script src="js/jquery-3.1.1.min.js"></script>-->
-	<script src="js/jquery.min.js"></script>
 	<script src="js/md5.min.js"></script>
-	<!-- 3. 导入bootstrap的js文件 -->
-	<!--<script src="js/bootstrap.min.js"></script>-->
 	<!--导入vue.js-->
 	<script src="js/vue.js"></script>
+  	<script src="js/element-ui/index.js"></script>
 	<script src="js/axios.min.js"></script>
 	<script src="js/api/request.js"></script>
 	<script src="js/api/validate.js"></script>
 	<script src="js/api/login.js"></script>
 
 	<script type="text/javascript">
-		//   <!-- 核心业务逻辑-->
 		new Vue({
-			el: "#loginApp",
+			el: '#login-app',
 			data() {
 				return {
-					loginForm: {
+					loginForm:{
 						username: 'admin',
-						password: '123456',
-					}
+						password: '123456'
+					},
+					loading: false
 				}
 			},
-
-			// data: {
-			// 	username: '',
-			// 	password: '',
-			// },
 			computed: {
 				loginRules() {
 					const validateUsername = (rule, value, callback) => {
@@ -99,14 +94,13 @@
 					}
 				}
 			},
+			created() {
+			},
 			methods: {
-				async login() {
-					// if(this.username.trim() === "" || this.password.trim() === "") {
-					// 	alert("请输入用户名或密码才能进行登录!");
-					// 	return;
-					// }
+				async handleLogin() {
 					this.$refs.loginForm.validate(async (valid) => {
-						if(valid) {
+						if (valid) {
+							this.loading = true
 							let res = await loginApi(this.loginForm)
 							if(res.status===0) {
 								localStorage.setItem("token", res.data.tokenHead + res.data.token);
@@ -118,29 +112,9 @@
 							}
 						}
 					})
-					// $.ajax({
-					// 	url: '/user/login',
-					// 	data: {"username": this.username, "password": this.password},
-					// 	type: 'POST',
-					// 	dataType: 'json',
-					// 	headers: {
-					// 		"token" : localStorage.getItem('token'),
-					// 	},
-					// 	success:function (res) {
-					// 		console.log(res);
-					// 		if(res.status===0) {
-					// 			localStorage.setItem("token", res.data.tokenHead + res.data.token);
-					// 			console.log(res.data.tokenHead + res.data.token);
-					// 			window.location.href="list.html";
-					// 		} else {
-					// 			alert(res.message);
-					// 			window.location.href="login.html";
-					// 		}
-					// 	}
-					// })
 				}
 			}
-	})
+		})
 	</script>
   </body>
 </html>
