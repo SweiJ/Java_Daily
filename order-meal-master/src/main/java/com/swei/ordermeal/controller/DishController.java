@@ -2,14 +2,17 @@ package com.swei.ordermeal.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.sun.corba.se.spi.ior.IORTemplate;
 import com.swei.ordermeal.common.R;
 import com.swei.ordermeal.dto.DishDto;
 import com.swei.ordermeal.model.Category;
 import com.swei.ordermeal.model.Dish;
+import com.swei.ordermeal.model.DishFlavor;
 import com.swei.ordermeal.service.CategoryService;
 import com.swei.ordermeal.service.DishFlavorService;
 import com.swei.ordermeal.service.DishService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -154,4 +157,17 @@ public class DishController {
         dishService.updateSalesStatus(status, ids);
         return R.success("成功!");
     }
+
+    /**
+     * 新增套餐中查询菜品列表
+     * @param dish
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<DishDto>> list(Dish dish) {
+        log.info("dish:{}", dish);
+
+        return dishService.getCategorylist(dish);
+    }
+
 }

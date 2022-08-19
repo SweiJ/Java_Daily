@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.swei.ordermeal.dto.SetmealDto;
 import com.swei.ordermeal.model.Setmeal;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -19,4 +21,9 @@ public interface SetmealService extends IService<Setmeal> {
      */
     void saveWithDish(SetmealDto setmealDto);
 
+    /**
+     * 删除套餐
+     * @param ids
+     */
+    void deleteSetmealByIds(List<Long> ids);
 }

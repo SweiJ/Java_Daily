@@ -1,6 +1,7 @@
 package com.swei.ordermeal.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.swei.ordermeal.common.R;
 import com.swei.ordermeal.dto.DishDto;
 import com.swei.ordermeal.model.Dish;
 
@@ -46,4 +47,10 @@ public interface DishService extends IService<Dish> {
      */
     void updateSalesStatus(String status, List<Long> ids);
 
+    /**
+     * 查询套餐内菜品列表
+     * @param dish
+     * @return
+     */
+    R<List<DishDto>> getCategorylist(Dish dish);
 }

@@ -2,12 +2,16 @@ package com.swei.ordermeal.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.swei.ordermeal.common.R;
 import com.swei.ordermeal.dto.DishDto;
 import com.swei.ordermeal.mapper.DishMapper;
+import com.swei.ordermeal.model.Category;
 import com.swei.ordermeal.model.Dish;
 import com.swei.ordermeal.model.DishFlavor;
+import com.swei.ordermeal.service.CategoryService;
 import com.swei.ordermeal.service.DishFlavorService;
 import com.swei.ordermeal.service.DishService;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +32,9 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish> implements Di
 
     @Autowired
     private DishFlavorService dishFlavorService;
+
+    @Autowired
+    private CategoryService categoryService;
 
     /**
      * 新增菜品，同时保存对应的口味数据
@@ -136,5 +143,42 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish> implements Di
         }
     }
 
+    /**
+     * 查询套餐内菜品列表
+     * @param dish
+     * @return
+     */
+    @Override
+    @Transactional
+    public R<List<DishDto>> getCategorylist(Dish dish) {
+        // 条件构造器
+        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+        // 根据传递过来的名称今夕查询
+        queryWrapper.like(StringUtils.isNotEmpty(dish.getName()), Dish::getName, dish.getName());
+        // 根据菜品id查询菜品
+        queryWrapper.eq(null != dish.getCategoryId(), Dish::getCategoryId, dish.getCategoryId());
+        // 添加条件, 查询状态为1的菜品
+        queryWrapper.eq(Dish::getStatus, 1);
 
+        queryWrapper.orderByDesc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
+
+        List<Dish> dishs = this.list(queryWrapper);
+
+        List<DishDto> dishDtos = dishs.stream().map(item -> {
+            DishDto dishDto = new DishDto();
+            BeanUtils.copyProperties(item, dishDto);
+
+            Category category = categoryService.getById(item.getCategoryId());
+            if(category != null) {
+                dishDto.setCategoryName(category.getName());
+            }
+            LambdaQueryWrapper<DishFlavor> wrapper = new LambdaQueryWrapper<>();
+            wrapper.eq(DishFlavor::getDishId, item.getId());
+
+            dishDto.setFlavors(dishFlavorService.list(wrapper));
+            return dishDto;
+        }).collect(Collectors.toList());
+
+        return R.success(dishDtos);
+    }
 }
