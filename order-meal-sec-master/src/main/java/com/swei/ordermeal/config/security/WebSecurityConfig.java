@@ -12,12 +12,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.cors.CorsUtils;
 
 /**
  * Created with IntelliJ IDEA.
@@ -47,7 +45,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().mvcMatchers(
+        web.ignoring().antMatchers(
+                "/backend/api/**",
+                "/backend/images/**",
+                "/backend/js/**",
+                "/backend/page/**",
+                "/backend/plugins/**",
+                "/backend/styles/**",
+                "/backend/*.ico",
+                "/backend/index.html",
                 "/backend/**",
                 "/front/**"
         );
@@ -58,9 +64,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 .authorizeRequests()
 //                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
-                .antMatchers("/backend/page/login/login.html","/employee/login").permitAll()
+                .antMatchers("/login","/employee/login").permitAll()
                 // 其他资源都要认证
-                .anyRequest().authenticated()
+                .antMatchers("/**").authenticated()
                 .and()
                 // 禁用缓存
                 .headers()
@@ -69,7 +75,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.formLogin()
                 // 登录页
-                .loginPage("/backend/page/login/login.html")
+//                .loginPage("/backend/page/login/login.html")
+                .loginPage("/login")
                 // 登录请求路径
                 .loginProcessingUrl("/employee/login");
         // 登录成功处理
