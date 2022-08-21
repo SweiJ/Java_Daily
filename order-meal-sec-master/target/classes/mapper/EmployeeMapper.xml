@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.swei.ordermeal.mapper.EmployeeMapper">
+
+
+    <select id="getRoles" resultType="com.swei.ordermeal.model.Role">
+        select * from emp_role
+            inner join role on emp_role.role_id = role.id where emp_id = #{id}
+    </select>
+
+</mapper>
