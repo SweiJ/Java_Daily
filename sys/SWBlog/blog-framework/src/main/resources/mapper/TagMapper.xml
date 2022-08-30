@@ -3,7 +3,7 @@
 <mapper namespace="com.swei.mapper.TagMapper">
 
     <delete id="deleteTag">
-        update sw_link
+        update sw_tag
 
         set del_flag = 1
 

@@ -35,4 +35,10 @@ public interface MenuMapper extends BaseMapper<Menu> {
      */
     List<Menu> selectAllRouterMenuTree();
 
+    /**
+     * 获取角色对应的资源
+     * @param id
+     * @return
+     */
+    List<Menu> getMenusByRoleId(@Param("id") String id);
 }

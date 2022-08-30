@@ -5,6 +5,8 @@ import com.swei.dto.CategoryListDto;
 import com.swei.entity.Category;
 import com.swei.utils.ResponseResult;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 
@@ -64,5 +66,12 @@ public interface CategoryService extends IService<Category> {
      * @return
      */
     ResponseResult listAllCategory();
+
+    /**
+     * 导出分类数据
+     * @param response
+     * @return
+     */
+    ResponseResult exportCategory(HttpServletResponse response);
 }
 

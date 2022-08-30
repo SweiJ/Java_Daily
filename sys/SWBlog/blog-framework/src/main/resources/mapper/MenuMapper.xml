@@ -50,4 +50,12 @@
         order by
             m.parent_id, m.order_num
     </select>
+    <select id="getMenusByRoleId" resultType="com.swei.entity.Menu">
+        select
+            m.id, m.menu_name, m.parent_id
+        from
+            sys_menu m
+                left join sys_role_menu rm on m.id = rm.menu_id
+        where rm.role_id = #{id}
+    </select>
 </mapper>

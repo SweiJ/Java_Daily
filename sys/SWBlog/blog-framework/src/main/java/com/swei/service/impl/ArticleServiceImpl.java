@@ -168,8 +168,8 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
     public ResponseResult getArticleList(Integer pageNum, Integer pageSize, ArticleListDto articleListDto) {
         // 分页
         LambdaQueryWrapper<Article> articleWrapper = new LambdaQueryWrapper<>();
-        articleWrapper.eq(StringUtils.hasText(articleListDto.getTitle()), Article::getTitle, articleListDto.getTitle());
-        articleWrapper.eq(StringUtils.hasText(articleListDto.getSummary()), Article::getSummary, articleListDto.getSummary());
+        articleWrapper.like(StringUtils.hasText(articleListDto.getTitle()), Article::getTitle, articleListDto.getTitle());
+        articleWrapper.like(StringUtils.hasText(articleListDto.getSummary()), Article::getSummary, articleListDto.getSummary());
 
         Page<Article> page = new Page<>(pageNum, pageSize);
         page(page, articleWrapper);

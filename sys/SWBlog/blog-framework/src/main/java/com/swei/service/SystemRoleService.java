@@ -52,4 +52,10 @@ public interface SystemRoleService extends IService<Role> {
      * @return
      */
     ResponseResult updateRole(Role role);
+
+    /**
+     * 获取角色名称列表
+     * @return
+     */
+    ResponseResult listAllRole();
 }

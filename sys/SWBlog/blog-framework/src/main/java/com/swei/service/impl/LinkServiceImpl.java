@@ -59,7 +59,7 @@ public class LinkServiceImpl extends ServiceImpl<LinkMapper, Link> implements Li
     public ResponseResult getLinkList(Integer pageNum, Integer pageSize, LinkListDto linkListDto) {
         // 分页
         LambdaQueryWrapper<Link> linkWrapper = new LambdaQueryWrapper<>();
-        linkWrapper.eq(StringUtils.hasText(linkListDto.getName()), Link::getName, linkListDto.getName());
+        linkWrapper.like(StringUtils.hasText(linkListDto.getName()), Link::getName, linkListDto.getName());
         linkWrapper.eq(StringUtils.hasText(linkListDto.getStatus()), Link::getStatus, linkListDto.getStatus());
 
         Page<Link> page = new Page<>(pageNum, pageSize);

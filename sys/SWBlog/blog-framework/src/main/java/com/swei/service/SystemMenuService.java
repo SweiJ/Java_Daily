@@ -50,4 +50,16 @@ public interface SystemMenuService extends IService<Menu> {
      * @return
      */
     ResponseResult updateMenu(Menu menu);
+
+    /**
+     * 获取资源下拉菜单 所有资源
+     * @return
+     */
+    ResponseResult getSelectedMenu();
+
+    /**
+     * 获取某个角色所对应的资源
+     * @return
+     */
+    ResponseResult getRoleMenuTreeselect(String id);
 }

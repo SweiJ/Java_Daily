@@ -90,4 +90,19 @@ public class SystemConstants {
      * 删除标记 已删除
      */
     public static final int IS_DEL_FLAG = 1;
+
+    /**
+     * 角色id
+     */
+    public static final String ROLE_ID_TYPE = "2";
+
+    /**
+     * 用户类型 普通
+     */
+    public static final String USER_COMMON_TYPE = "0";
+
+    /**
+     * 用户类型 管理员
+     */
+    public static final String USER_ADMIN_TYPE = "1";
 }

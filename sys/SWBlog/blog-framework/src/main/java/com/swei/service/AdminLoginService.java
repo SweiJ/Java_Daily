@@ -1,5 +1,6 @@
 package com.swei.service;
 
+import com.swei.dto.UserDto;
 import com.swei.entity.User;
 import com.swei.utils.ResponseResult;
 import com.swei.vo.AdminUserInfoVo;
@@ -15,10 +16,10 @@ import com.swei.vo.RouterVo;
 public interface AdminLoginService {
     /**
      * 后台登录
-     * @param user
+     * @param userDto
      * @return
      */
-    ResponseResult login(User user);
+    ResponseResult login(UserDto userDto);
 
     /**
      * 获取权限信息

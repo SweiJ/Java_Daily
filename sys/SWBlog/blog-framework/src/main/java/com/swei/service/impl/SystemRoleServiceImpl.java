@@ -4,14 +4,19 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.swei.SystemException;
+import com.swei.constants.SystemConstants;
 import com.swei.dto.RoleListDto;
 import com.swei.entity.Role;
-import com.swei.entity.User;
 import com.swei.mapper.RoleMapper;
+import com.swei.mapper.RoleMenuMapper;
+import com.swei.mapper.UserRoleMapper;
 import com.swei.service.SystemRoleService;
+import com.swei.utils.BeanCopyUtils;
 import com.swei.utils.ResponseResult;
 import com.swei.utils.enums.HttpCodeEnum;
 import com.swei.vo.PageVo;
+import com.swei.vo.RoleVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -26,6 +31,15 @@ import java.util.List;
  */
 @Service
 public class SystemRoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements SystemRoleService {
+
+    @Autowired
+    private UserRoleMapper userRoleMapper;
+
+    @Autowired
+    private RoleMapper roleMapper;
+
+    @Autowired
+    private RoleMenuMapper roleMenuMapper;
 
     /**
      * 获取角色列表
@@ -56,7 +70,7 @@ public class SystemRoleServiceImpl extends ServiceImpl<RoleMapper, Role> impleme
      */
     @Override
     public ResponseResult addRole(Role role) {
-        if(StringUtils.hasText(role.getRoleName())) {
+        if(!StringUtils.hasText(role.getRoleName())) {
             throw new SystemException(HttpCodeEnum.ROLE_IS_NULL);
         }
 
@@ -71,7 +85,18 @@ public class SystemRoleServiceImpl extends ServiceImpl<RoleMapper, Role> impleme
      */
     @Override
     public ResponseResult deleteRole(List<String> id) {
-        return null;
+
+        // 查询是否还存在用户是这个角色 如果有则返回错误
+//        List<Long> ids = id.stream().map(Long::valueOf).collect(Collectors.toList());
+        int count = userRoleMapper.selectUserRoleByRoleIds(id);
+        if(count > 0) {
+            throw new SystemException(HttpCodeEnum.ROLE_BIND_USER);
+        }
+
+        // 没有则删除
+        roleMapper.deleteRoleByIds(id);
+
+        return ResponseResult.okResult();
     }
 
     /**
@@ -93,10 +118,32 @@ public class SystemRoleServiceImpl extends ServiceImpl<RoleMapper, Role> impleme
      */
     @Override
     public ResponseResult updateRole(Role role) {
-        updateRole(role);
+        // 修改角色
+        updateById(role);
+
+        // 删除当前角色拥有的资源关联信息
+        roleMenuMapper.deleteRoleMenuByRoleId(role.getId());
+        // 修改角色资源关联表
+        roleMenuMapper.insertRoleMenu(role.getId(), role.getMenuIds());
 
         return ResponseResult.okResult();
     }
 
+    /**
+     * 获取角色名称列表
+     * @return
+     */
+    @Override
+    public ResponseResult listAllRole() {
+        LambdaQueryWrapper<Role> roleWrapper = new LambdaQueryWrapper<>();
+        // 状态正常的角色
+        roleWrapper.eq(Role::getStatus, SystemConstants.STATUS_NORMAL);
+
+        // 所有角色
+        List<Role> roles = list(roleWrapper);
+        // 封装
+        List<RoleVo> roleList = BeanCopyUtils.copyBeanList(roles, RoleVo.class);
+        return ResponseResult.okResult(roleList);
+    }
 
 }

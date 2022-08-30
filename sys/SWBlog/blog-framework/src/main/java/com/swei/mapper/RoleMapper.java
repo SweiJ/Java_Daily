@@ -23,4 +23,10 @@ public interface RoleMapper extends BaseMapper<Role> {
      */
     List<String> selectRoleKeyByUserId(@Param("userId") Long userId);
 
+
+    /**
+     * 逻辑删除标签
+     * @param id
+     */
+    void deleteRoleByIds(@Param("ids") List<String> id);
 }

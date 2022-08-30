@@ -1,6 +1,7 @@
 package com.swei.service.impl;
 
 import com.swei.constants.SystemConstants;
+import com.swei.dto.UserDto;
 import com.swei.entity.LoginUser;
 import com.swei.entity.Menu;
 import com.swei.entity.User;
@@ -49,8 +50,8 @@ public class AdminLoginServiceImpl implements AdminLoginService {
     private RoleService roleService;
 
     @Override
-    public ResponseResult login(User user) {
-        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(user.getUserName(), user.getPassword());
+    public ResponseResult login(UserDto userDto) {
+        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(userDto.getUserName(), userDto.getPassword());
         Authentication authenticate = authenticationManager.authenticate(authenticationToken);
 
         if(Objects.isNull(authenticate)) {

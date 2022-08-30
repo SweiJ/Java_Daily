@@ -1,5 +1,8 @@
 package com.swei.service.impl;
 
+import com.alibaba.excel.EasyExcel;
+import com.alibaba.excel.ExcelWriter;
+import com.alibaba.excel.write.metadata.WriteSheet;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -13,17 +16,29 @@ import com.swei.mapper.CategoryMapper;
 import com.swei.service.ArticleService;
 import com.swei.service.CategoryService;
 import com.swei.utils.BeanCopyUtils;
+import com.swei.utils.ExcelUtil;
 import com.swei.utils.ResponseResult;
 import com.swei.utils.enums.HttpCodeEnum;
+import com.swei.vo.CategoryExcelVo;
 import com.swei.vo.CategoryVo;
 import com.swei.vo.PageVo;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -41,6 +56,9 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
 
     @Autowired
     private CategoryMapper categoryMapper;
+
+    @Value("${excel.templatePath}")
+    private String templatePath;
 
     /**
      * 前台获取分类列表
@@ -80,7 +98,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
     public ResponseResult getAdminCategoryList(Integer pageNum, Integer pageSize, CategoryListDto categoryListDto) {
         // 分页
         LambdaQueryWrapper<Category> categoryWrapper = new LambdaQueryWrapper<>();
-        categoryWrapper.eq(StringUtils.hasText(categoryListDto.getName()), Category::getName, categoryListDto.getName());
+        categoryWrapper.like(StringUtils.hasText(categoryListDto.getName()), Category::getName, categoryListDto.getName());
         categoryWrapper.eq(StringUtils.hasText(categoryListDto.getStatus()), Category::getStatus, categoryListDto.getStatus());
 
         Page<Category> page = new Page<>(pageNum, pageSize);
@@ -155,6 +173,22 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
         List<CategoryVo> categoryVos = BeanCopyUtils.copyBeanList(categories, CategoryVo.class);
 //
         return ResponseResult.okResult(categoryVos);
+    }
+
+    /**
+     * 导出分类数据
+     * @param response
+     * @return
+     */
+    @Override
+    public ResponseResult exportCategory(HttpServletResponse response) {
+
+        List<Category> categories = list();
+        List<CategoryExcelVo> categoryExcelVos = BeanCopyUtils.copyBeanList(categories, CategoryExcelVo.class);
+        //调用工具类
+        ExcelUtil.exportExcel(categoryExcelVos,"分类",CategoryExcelVo.class,response);
+
+        return ResponseResult.okResult();
     }
 
 

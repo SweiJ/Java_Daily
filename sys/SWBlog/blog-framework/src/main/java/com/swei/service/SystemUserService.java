@@ -1,6 +1,7 @@
 package com.swei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.swei.dto.AddUserDto;
 import com.swei.dto.UserListDto;
 import com.swei.entity.User;
 import com.swei.utils.ResponseResult;
@@ -27,10 +28,10 @@ public interface SystemUserService extends IService<User> {
 
     /**
      * 新增用户
-     * @param user
+     * @param addUserDto
      * @return
      */
-    ResponseResult addUser(User user);
+    ResponseResult addUser(AddUserDto addUserDto);
 
     /**
      * 逻辑删除用户

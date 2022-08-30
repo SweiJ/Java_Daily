@@ -31,7 +31,8 @@ public enum HttpCodeEnum {
     CATEGORY_IS_NULL(515, "分类不存在"),
     USER_IS_NULL(516, "用户不存在"),
     ROLE_IS_NULL(516, "角色不存在"),
-    MENU_IS_NULL(517, "菜单不存在");
+    MENU_IS_NULL(517, "菜单不存在"),
+    ROLE_BIND_USER(518, "删除失败, 当前角色有绑定的用户");
     int code;
     String msg;
 
