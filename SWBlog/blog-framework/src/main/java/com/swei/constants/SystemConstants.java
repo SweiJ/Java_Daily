@@ -105,4 +105,5 @@ public class SystemConstants {
      * 用户类型 管理员
      */
     public static final String USER_ADMIN_TYPE = "1";
+
 }

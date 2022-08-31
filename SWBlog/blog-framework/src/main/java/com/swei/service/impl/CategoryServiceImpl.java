@@ -57,9 +57,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
     @Autowired
     private CategoryMapper categoryMapper;
 
-    @Value("${excel.templatePath}")
-    private String templatePath;
-
     /**
      * 前台获取分类列表
      * @return
