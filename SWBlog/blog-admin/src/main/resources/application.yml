@@ -57,6 +57,3 @@ oss:
   secretKey: "16lObiLaqFMK5qiWSxoDuNYhVZ4N3fYLV1Nsf_TV"
   bucket: "swj-blog"
   domain: "http://rh9tgr0lh.hd-bkt.clouddn.com/"
-
-excel:
-  templatePath: "D:/"

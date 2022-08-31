@@ -2,7 +2,6 @@ package com.swei.controller;
 
 import com.swei.dto.ArticleDto;
 import com.swei.dto.ArticleListDto;
-import com.swei.entity.Article;
 import com.swei.service.ArticleService;
 import com.swei.utils.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +18,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/content/article")
-public class ArticleController {
+public class ContentArticleController {
 
     @Autowired
     private ArticleService articleService;
@@ -28,12 +27,12 @@ public class ArticleController {
      * 获取文章列表信息
      * @param pageNum
      * @param pageSize
-     * @param ArticleListDto
+     * @param articleListDto
      * @return
      */
     @GetMapping("/list")
-    public ResponseResult getArticleList(Integer pageNum, Integer pageSize, ArticleListDto ArticleListDto) {
-        return articleService.getArticleList(pageNum, pageSize, ArticleListDto);
+    public ResponseResult getArticleList(Integer pageNum, Integer pageSize, ArticleListDto articleListDto) {
+        return articleService.getArticleList(pageNum, pageSize, articleListDto);
     }
 
     /**
@@ -52,7 +51,7 @@ public class ArticleController {
      * @return
      */
     @DeleteMapping("/{id}")
-    public ResponseResult deleteTag(@PathVariable List<String> id) {
+    public ResponseResult deleteTag(@PathVariable("id") List<String> id) {
         return articleService.deleteArticle(id);
     }
 
@@ -62,7 +61,7 @@ public class ArticleController {
      * @return
      */
     @GetMapping("/{id}")
-    public ResponseResult getArticle(@PathVariable String id) {
+    public ResponseResult getArticle(@PathVariable("id") String id) {
         return articleService.getArticle(id);
     }
 

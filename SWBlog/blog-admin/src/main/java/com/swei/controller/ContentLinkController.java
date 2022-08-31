@@ -19,7 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/content/link")
-public class LinkController {
+public class ContentLinkController {
 
     @Autowired
     private LinkService linkService;

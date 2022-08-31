@@ -19,7 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/content/category")
-public class CategoryController {
+public class ContentCategoryController {
 
     @Autowired
     private CategoryService categoryService;
