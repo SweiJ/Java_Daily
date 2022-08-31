@@ -52,3 +52,8 @@ mybatis-plus:
       logic-not-delete-value: 0
       id-type: auto
 
+oss:
+  accessKey: "DZDNSSZqNeVgsFqd3ZzvLHMsH8dXQq1fpbFGLK5I"
+  secretKey: "16lObiLaqFMK5qiWSxoDuNYhVZ4N3fYLV1Nsf_TV"
+  bucket: "swj-blog"
+  domain: "http://rh9tgr0lh.hd-bkt.clouddn.com/"

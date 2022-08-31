@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ObjectUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -37,6 +38,9 @@ public class UpdateViewCountJob {
         // 查询redis中的浏览量
         Map<String, Integer> viewCountMap = redisCache.getCacheMap(SystemConstants.ARTICLEVIEWCOUNT);
 
+        if(ObjectUtils.isEmpty(viewCountMap)) {
+            return;
+        }
         List<Article> articles = viewCountMap.entrySet()
                 .stream()
                 .map(entry -> new Article(Long.valueOf(entry.getKey()), entry.getValue().longValue()))
