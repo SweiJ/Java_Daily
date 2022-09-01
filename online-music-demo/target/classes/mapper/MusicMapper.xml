@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.swei.music.mapper.MusicMapper">
+
+
+    <insert id="insertMusic">
+        insert into music(title, singer, time, url, userid)
+        values(#{music.title}, #{music.singer}, #{music.time}, #{music.url}, #{music.userid});
+    </insert>
+
+    <delete id="delMusicById">
+        delete from music where id = #{id}
+    </delete>
+
+    <select id="getMusicBySinger" resultType="com.swei.music.model.Music">
+        select * from music where singer = #{singer} and title = #{title};
+    </select>
+
+    <select id="getMusicById" resultType="com.swei.music.model.Music">
+        select * from music where id = #{id}
+    </select>
+
+    <select id="getMusicByMusicName" resultType="com.swei.music.model.Music">
+        select * from music where title like concat('%',#{musicName},'%')
+    </select>
+    <select id="getMusic" resultType="com.swei.music.model.Music">
+        select * from music
+    </select>
+
+</mapper>

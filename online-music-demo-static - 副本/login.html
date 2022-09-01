@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>音乐播放器登录页面</title>
+
+	  <!--图标-->
+	  <link rel="shortcut icon" href="/favicon.ico">
+	  <link rel="stylesheet" href="js/element-ui/index.css" />
+	  <link rel="stylesheet" href="css/common.css">
+	  <link rel="stylesheet" href="css/login.css">
+	  <!--图标样式-->
+	  <link rel="stylesheet" href="/css/iconfont.css" />
+	  <style>
+		  .body{
+			  min-width: 1366px;
+		  }
+	  </style>
+
+  </head>
+  <body id="body">
+  	<div id="loginApp" class="container" style="width: 400px;margin-top: 110px;background-color: rgba(255,255,255,0.8)" :rules="loginRules">
+  		<h3 style="text-align: center;">管理员登录</h3>
+<!--        <form action="login" method="post">-->
+	      <div class="form-group" >
+	        <label for="user">用户名：</label>
+	        <input type="text" name="username" class="form-control" id="user" v-model:value="loginForm.username" placeholder="请输入用户名"/>
+	      </div>
+
+	      <div class="form-group">
+	        <label for="password">密码：</label>
+	        <input type="password" name="password" class="form-control" id="password" v-model:value="loginForm.password" placeholder="请输入密码"/>
+	      </div>
+
+	      <hr/>
+	      <div class="form-group" style="text-align: center;"><!--class="form-group"-->
+	        <input style="width: 200px;height: 40px" id="submit" class="btn btn btn-primary" type="button" @click="login" value="登录" >
+		  </div>
+<!--	  	</form>-->
+		<!-- 出错显示的信息框 -->
+	  	<div class="alert alert-warning alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" >
+		  	<span>&times;</span>
+		  </button>
+		   <strong id="message">您尚未进行登录，请您登录!</strong>
+		</div>
+  	</div>
+
+	<!-- 1. 导入CSS的全局样式 -->
+<!--	<link href="css/bootstrap.min.css" rel="stylesheet">-->
+	<!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+	<!--<script src="js/jquery-3.1.1.min.js"></script>-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/md5.min.js"></script>
+	<!-- 3. 导入bootstrap的js文件 -->
+	<!--<script src="js/bootstrap.min.js"></script>-->
+	<!--导入vue.js-->
+	<script src="js/vue.js"></script>
+	<script src="js/axios.min.js"></script>
+	<script src="js/api/request.js"></script>
+	<script src="js/api/validate.js"></script>
+	<script src="js/api/login.js"></script>
+
+	<script type="text/javascript">
+		//   <!-- 核心业务逻辑-->
+		new Vue({
+			el: "#loginApp",
+			data() {
+				return {
+					loginForm: {
+						username: 'admin',
+						password: '123456',
+					}
+				}
+			},
+
+			// data: {
+			// 	username: '',
+			// 	password: '',
+			// },
+			computed: {
+				loginRules() {
+					const validateUsername = (rule, value, callback) => {
+						if (value.length < 1 ) {
+							callback(new Error('请输入用户名'))
+						} else {
+							callback()
+						}
+					}
+					const validatePassword = (rule, value, callback) => {
+						if (value.length < 6) {
+							callback(new Error('密码必须在6位以上'))
+						} else {
+							callback()
+						}
+					}
+					return {
+						'username': [{ 'validator': validateUsername, 'trigger': 'blur' }],
+						'password': [{ 'validator': validatePassword, 'trigger': 'blur' }]
+					}
+				}
+			},
+			methods: {
+				async login() {
+					// if(this.username.trim() === "" || this.password.trim() === "") {
+					// 	alert("请输入用户名或密码才能进行登录!");
+					// 	return;
+					// }
+					this.$refs.loginForm.validate(async (valid) => {
+						if(valid) {
+							let res = await loginApi(this.loginForm)
+							if(res.status===0) {
+								localStorage.setItem("token", res.data.tokenHead + res.data.token);
+								console.log(res.data.tokenHead + res.data.token);
+								window.location.href="list.html";
+							} else {
+								alert(res.message);
+								window.location.href="login.html";
+							}
+						}
+					})
+					// $.ajax({
+					// 	url: '/user/login',
+					// 	data: {"username": this.username, "password": this.password},
+					// 	type: 'POST',
+					// 	dataType: 'json',
+					// 	headers: {
+					// 		"token" : localStorage.getItem('token'),
+					// 	},
+					// 	success:function (res) {
+					// 		console.log(res);
+					// 		if(res.status===0) {
+					// 			localStorage.setItem("token", res.data.tokenHead + res.data.token);
+					// 			console.log(res.data.tokenHead + res.data.token);
+					// 			window.location.href="list.html";
+					// 		} else {
+					// 			alert(res.message);
+					// 			window.location.href="login.html";
+					// 		}
+					// 	}
+					// })
+				}
+			}
+	})
+	</script>
+  </body>
+</html>

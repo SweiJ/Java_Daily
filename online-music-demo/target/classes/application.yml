@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/onlinemusic?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: jsw
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 100MB
+  security:
+    user:
+      name: root
+      password: root
+
+
+debug: true
+logging:
+  level:
+    com.swei.music: debug
+
+mybatis:
+  mapper-locations: classpath:mapper/**Mapper.xml
+
+
+music:
+  local:
+    path: D:/music/
+
+jwt:
+  # Jwt存储的请求头
+  tokenHeader: Authorization
+  # Jwt加密秘钥
+  secret: online-music
+  # Jwt 的超期限时间（60*60）*24
+  expiration: 604800
+  # Jwt负载中拿到开头
+  tokenHead: Bearer
