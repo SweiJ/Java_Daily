@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="615ff443-4c17-4451-ad1e-472411ae73b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../online-music-demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-demo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-demo/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-demo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/dataSources/e23ce733-91a8-4eca-ac53-e2f712509354.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/dataSources/e23ce733-91a8-4eca-ac53-e2f712509354/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/dataSources/e23ce733-91a8-4eca-ac53-e2f712509354/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/dataSources/e23ce733-91a8-4eca-ac53-e2f712509354/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/dataSources/e23ce733-91a8-4eca-ac53-e2f712509354/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__cn_hutool_hutool_all_5_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_alibaba_druid_1_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_4_5_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__io_opentracing_opentracing_api_0_33_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__io_opentracing_opentracing_noop_0_33_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__io_opentracing_opentracing_util_0_33_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_ini4j_ini4j_0_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_jacoco_org_jacoco_agent_runtime_0_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_aop_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_beans_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_context_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_core_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_expression_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_test_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_tx_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_web_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-meal-sec-master/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent-project/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent-project/son01-project/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent-project/son02-project/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parent-project/son03-project/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_01users/src/main/java/com/swei/UsersApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_01users/src/main/java/com/swei/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_01users/src/main/java/com/swei/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_01users/src/main/java/com/swei/feignclients/ProductClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_01users/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_02products/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_02products/src/main/java/com/swei/ProductsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_02products/src/main/java/com/swei/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_02products/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_03configclient/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_03configclient/src/main/java/com/swei/ConfigClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_03configclient/src/main/java/com/swei/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_03configclient/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_04sentinel/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_04sentinel/src/main/java/com/swei/SentinelApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_04sentinel/src/main/java/com/swei/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_04sentinel/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-blogs-system/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/src/main/java/com/swei/AdminAdminsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/src/main/java/com/swei/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/src/main/java/com/swei/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/src/main/java/com/swei/mapper/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/src/main/java/com/swei/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/src/main/java/com/swei/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-admins/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-category/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-category/src/main/java/com/swei/AdminCategoryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-category/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-commons/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-gateway/src/main/java/com/swei/AdminGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-users/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-users/src/main/java/com/swei/AdminUsersApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-users/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-videos/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-videos/src/main/java/com/swei/AdminVideosApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../swvideo-admin/swvideo-videos/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zf-parent/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zf-parent/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zf-parent/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zf-parent/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zf-parent/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zf-parent/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SWBlog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-system/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-system/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secsys/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../secsys/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springcloud/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springcloud/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloud/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springcloud/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_01users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springcloudalibaba_parent/springcloudalibaba_01users/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\dev\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DG7PRDhBcGg1iKo3ivCLccXfYh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.swei.ordermeal.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\resources\backend\page\demo" />
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\java\com\swei\ordermeal\common" />
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\java\com\swei\ordermeal\model" />
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OrderMealMasterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-meal-master" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.swei.ordermeal.OrderMealMasterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="615ff443-4c17-4451-ad1e-472411ae73b2" name="Changes" comment="" />
+      <created>1660313557660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660313557660</updated>
+      <workItem from="1660313560221" duration="2720000" />
+      <workItem from="1660347622295" duration="78000" />
+      <workItem from="1660347755834" duration="39316000" />
+      <workItem from="1660435888750" duration="4436000" />
+      <workItem from="1660451513034" duration="2528000" />
+      <workItem from="1660468043707" duration="9310000" />
+      <workItem from="1660524230813" duration="11256000" />
+      <workItem from="1660634009384" duration="3619000" />
+      <workItem from="1660648500069" duration="4212000" />
+      <workItem from="1660654189829" duration="117000" />
+      <workItem from="1660692441679" duration="3727000" />
+      <workItem from="1660798871306" duration="685000" />
+      <workItem from="1660807774495" duration="9015000" />
+      <workItem from="1661933385747" duration="3018000" />
+      <workItem from="1663905414172" duration="844000" />
+    </task>
+    <task id="LOCAL-00001" summary="online-music-demo 加入security还存在问题">
+      <created>1660401245727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660401245727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="online-music-master 不完整">
+      <created>1660440342723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660440342723</updated>
+    </task>
+    <task id="LOCAL-00003" summary="secsys">
+      <created>1660547673658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660547673658</updated>
+    </task>
+    <task id="LOCAL-00004" summary="online-music-demo">
+      <created>1660654289370</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660654289370</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="online-music-demo 加入security还存在问题" />
+    <MESSAGE value="online-music-master 不完整" />
+    <MESSAGE value="secsys" />
+    <MESSAGE value="online-music-demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="online-music-demo" />
+  </component>
+</project>

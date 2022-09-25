@@ -1,0 +1,17 @@
+server:
+  port: 8998
+
+spring:
+  application:
+    name: SENTINEL
+  cloud:
+    nacos:
+      server-addr: 192.168.80.10:8848
+    sentinel:
+        # 开启sentinel保护
+      enabled: true
+      transport:
+        # 指定sentinel dashboard web 地址
+        dashboard: 192.168.80.10:9191
+        # 指定sentinel组件与 sentinel dashboard 组件通信地址
+        port: 8719

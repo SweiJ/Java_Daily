@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="615ff443-4c17-4451-ad1e-472411ae73b2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Mybatis Mapper" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\dev\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DG7PRDhBcGg1iKo3ivCLccXfYh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SWBlog" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.swei.ordermeal.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-sec-master\src\main\resources\static" />
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\resources\backend\page\demo" />
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\java\com\swei\ordermeal\common" />
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\java\com\swei\ordermeal\model" />
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-master\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\下载\桌面\Java\JavaGit\order-meal-sec-master\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OrderMealMasterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-meal-master" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.swei.ordermeal.OrderMealMasterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="615ff443-4c17-4451-ad1e-472411ae73b2" name="Changes" comment="" />
+      <created>1660313557660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660313557660</updated>
+      <workItem from="1660313560221" duration="2720000" />
+      <workItem from="1660347622295" duration="78000" />
+      <workItem from="1660347755834" duration="39316000" />
+      <workItem from="1660435888750" duration="4436000" />
+      <workItem from="1660451513034" duration="2528000" />
+      <workItem from="1660468043707" duration="9310000" />
+      <workItem from="1660524230813" duration="11256000" />
+      <workItem from="1660634009384" duration="3619000" />
+      <workItem from="1660648500069" duration="4212000" />
+      <workItem from="1660654189829" duration="117000" />
+      <workItem from="1660692441679" duration="3727000" />
+      <workItem from="1660798966340" duration="11232000" />
+      <workItem from="1660830170095" duration="116000" />
+      <workItem from="1660865902117" duration="2493000" />
+      <workItem from="1660869050663" duration="85000" />
+      <workItem from="1660948902604" duration="11035000" />
+      <workItem from="1660992375353" duration="480000" />
+      <workItem from="1661077258970" duration="462000" />
+      <workItem from="1662452066093" duration="263000" />
+    </task>
+    <task id="LOCAL-00001" summary="online-music-demo 加入security还存在问题">
+      <created>1660401245727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660401245727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="online-music-master 不完整">
+      <created>1660440342723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660440342723</updated>
+    </task>
+    <task id="LOCAL-00003" summary="secsys">
+      <created>1660547673658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660547673658</updated>
+    </task>
+    <task id="LOCAL-00004" summary="online-music-demo">
+      <created>1660654289370</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660654289370</updated>
+    </task>
+    <task id="LOCAL-00005" summary="online-meal-master">
+      <created>1660830248991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660830248992</updated>
+    </task>
+    <task id="LOCAL-00006" summary="online-meal-master">
+      <created>1660869100869</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660869100869</updated>
+    </task>
+    <task id="LOCAL-00007" summary="online-meal-sec-master">
+      <created>1660992847754</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660992847754</updated>
+    </task>
+    <task id="LOCAL-00008" summary="online-meal-sec-master 前端资源">
+      <created>1661077713872</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661077713872</updated>
+    </task>
+    <task id="LOCAL-00009" summary="online-meal-sec-master">
+      <created>1662452313417</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662452313417</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="online-music-demo 加入security还存在问题" />
+    <MESSAGE value="online-music-master 不完整" />
+    <MESSAGE value="secsys" />
+    <MESSAGE value="online-music-demo" />
+    <MESSAGE value="online-meal-master" />
+    <MESSAGE value="online-meal-sec-master 前端资源" />
+    <MESSAGE value="online-meal-sec-master" />
+    <option name="LAST_COMMIT_MESSAGE" value="online-meal-sec-master" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/ordermeal/config/security/JwtAuthencationTokenFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e7a10e6-5a61-414e-8986-c3b5a592e252" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/controller/LoveMusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/controller/MusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/mapper/LoveMusicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/mapper/MusicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/LoveMusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/MusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/impl/LoveMusicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/mapper/LoveMusicMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/mapper/MusicMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/js/jquery.params.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/js/md5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/loveMusic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/SewisePlayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/plugins/AudioPlayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/plugins/SubtitlesPlayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/liveOrange.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/liveRadio.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/liveWhite.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodFlowPlayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodFoream.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodMobileTransparent.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodMobileWhite.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodOrange.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodTransparent.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodVspaas.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/flash/skins/vodWhite.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/buffer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveOrange/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/buffer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/controlbarbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveRadio/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/buffer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/liveWhite/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/buffer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/clarity_btn_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFlowPlayer/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/buffer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/clarity_btn_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodFoream/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/buffer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileTransparent/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/buffer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodMobileWhite/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/buffer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodOrange/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/buffer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodTransparent/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/big_play_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/buffer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/controlbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/skin.html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/html/skins/vodWhite/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/js/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/live.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/sewise.player.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/player/vod.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/static/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/UserServie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/impl/UserServieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/util/Res.java" beforeDir="false" afterPath="$PROJECT_DIR$/../online-music-master/src/main/java/com/swei/music/util/Res.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../online-music-master/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../online-music-master/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Mybatis Mapper" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\dev\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CRAjQEV21YU5Ozd5A5j1chanUi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm-blogs-sys" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.swei.service" />
+      <recent name="com.swei.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\下载\桌面\Java\JavaGit\ssm-blogs-system\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ssm-blogs-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.swei.SpringBootBlogApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e7a10e6-5a61-414e-8986-c3b5a592e252" name="Changes" comment="" />
+      <created>1658755161278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658755161278</updated>
+      <workItem from="1658755164357" duration="765000" />
+      <workItem from="1658755961335" duration="2077000" />
+      <workItem from="1658837890118" duration="4858000" />
+      <workItem from="1658924409219" duration="1193000" />
+      <workItem from="1658925644670" duration="4045000" />
+      <workItem from="1659010371070" duration="684000" />
+      <workItem from="1659097532536" duration="461000" />
+      <workItem from="1659153417232" duration="3038000" />
+      <workItem from="1659156669684" duration="429000" />
+      <workItem from="1659157143088" duration="455000" />
+      <workItem from="1660046041892" duration="2117000" />
+    </task>
+    <task id="LOCAL-00001" summary="blog-sys-init">
+      <created>1658930391082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658930391082</updated>
+    </task>
+    <task id="LOCAL-00002" summary="blog-sys-static文件">
+      <created>1659097986058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659097986058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="blog-sys-init" />
+    <MESSAGE value="blog-sys-static文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog-sys-static文件" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/controller/BlogController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/service/impl/BlogServiceImpl.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

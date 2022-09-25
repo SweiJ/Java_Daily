@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00d93b23-1fe7-4906-bd29-8efcc81e9e00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Test/out/test/Test/encryption/FenceCiper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/out/test/Test/encryption/FenceCiper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomUrlDecisionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/CustomUrlDecisionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/JwtAuthencationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swei/secsys/config/JwtAuthencationTokenFilter.java" afterDir="false" />
-    </list>
+    <list default="true" id="00d93b23-1fe7-4906-bd29-8efcc81e9e00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaGitee/online_office" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../RuoYi-Vue-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -108,6 +103,8 @@
       <workItem from="1654131481596" duration="1210000" />
       <workItem from="1654150078593" duration="10453000" />
       <workItem from="1654217557543" duration="14495000" />
+      <workItem from="1660294487971" duration="694000" />
+      <workItem from="1661062729629" duration="907000" />
     </task>
     <task id="LOCAL-00001" summary="secsys">
       <created>1654083049851</created>

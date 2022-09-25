@@ -1,0 +1,45 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    nacos:
+      server-addr: 192.168.80.10:8848
+    gateway:
+      routes:
+        - id: admins_router
+          uri: lb://API-ADMINS
+          predicates:
+            - Path=/admin/demos
+          filters:
+            - StripPrefix=1  # 去掉请求前缀filter  int数字 1 去掉一级  2 去掉两级
+
+        - id: category_router
+            uri: lb://API-CATEGORY
+            predicates:
+              - Path=/categoryn/demos
+            filters:
+              - StripPrefix=1
+
+        - id: users_router
+            uri: lb://API-USERS
+            predicates:
+              - Path=/users/demos
+            filters:
+              - StripPrefix=1
+
+        - id: videos_router
+            uri: lb://API-VIDEOS
+            predicates:
+              - Path=/videos/demos
+            filters:
+              - StripPrefix=1
+
+      globalcors: # 跨域配置处理
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34e28edf-b5e8-4d2b-8169-66feba988c47" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/SystemException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/annotation/SystemLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/aspect/LogAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/config/FastJsonRedisSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/constants/SystemConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/AddCommentDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/AddUserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/ArticleDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/ArticleListDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/CategoryListDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/LinkListDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/MenuListDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/RoleListDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/TagListDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/dto/UserListDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/LoginUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/handler/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/handler/mybatisplus/MyMetaObjectHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/handler/security/AccessDeniedHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/handler/security/AuthenticationEntryPointImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/ArticleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/ArticleTagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/CommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/LinkMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/MenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/RoleMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/TagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/mapper/UserRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/AdminLoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/ArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/BlogLoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/LinkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/MenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/SystemMenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/SystemRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/SystemUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/TagService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/UploadService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/AdminLoginServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/ArticleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/BlogLoginServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/CommentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/LinkServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/MenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/OssUploadServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/SystemMenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/SystemRoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/SystemUserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/TagServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/UserDetailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/BeanCopyUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/ExcelBigNumberConvert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/ExcelUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/JwtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/PathUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/RedisCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/ResponseResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/SecurityUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/WebUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/utils/enums/HttpCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/AdminUserInfoVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/ArticleDetailVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/ArticleListVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/BlogUserLoginVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/CategoryExcelVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/CategoryVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/CommentVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/HotArticleVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/LinkVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/MenuVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/PageVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/RoleVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/RouterVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/TagVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/UserInfoVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-framework/target/classes/com/swei/vo/UserVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/SWFrontApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/controller/ArticleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/controller/BlogLoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/controller/CategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/controller/LinkController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/controller/UploadController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/filter/JwtAuthenticationTokenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/job/UpdateViewCountJob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/classes/com/swei/runner/ViewCountRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWBlog/blog-front/target/test-classes/com/swei/OSSTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\dev\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DESpBGZ6Ko5yxOXZPESVT39crz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SWBlog" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\下载\桌面\Java\JavaGit\online-music-demo\src\main\resources\static\css" />
+      <recent name="D:\下载\桌面\Java\JavaGit\online-music-demo\src\main\resources\static\images" />
+      <recent name="D:\下载\桌面\Java\JavaGit\online-music-demo\src\main\resources\static\js" />
+      <recent name="D:\下载\桌面\Java\JavaGit\online-music-demo\src\main\resources\static\js\api" />
+      <recent name="D:\下载\桌面\Java\JavaGit\online-music-demo\src\main\java\com\swei\music\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\下载\桌面\Java\JavaGit\online-music-demo\src\main\resources\static\front" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.swei.music.config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OnlineMusicDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="online-music-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.swei.music.OnlineMusicDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34e28edf-b5e8-4d2b-8169-66feba988c47" name="Changes" comment="" />
+      <created>1660262935150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660262935150</updated>
+      <workItem from="1660262937298" duration="24121000" />
+      <workItem from="1660633721893" duration="5095000" />
+      <workItem from="1660648521468" duration="5430000" />
+      <workItem from="1660688496294" duration="10086000" />
+      <workItem from="1660797811616" duration="770000" />
+      <workItem from="1661077224169" duration="14000" />
+      <workItem from="1661903764433" duration="1756000" />
+    </task>
+    <task id="LOCAL-00001" summary="online-music-demo-静态资源">
+      <created>1660310298872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660310298872</updated>
+    </task>
+    <task id="LOCAL-00002" summary="online-music-demo-静态资源">
+      <created>1660704188990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660704188990</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="online-music-demo-静态资源" />
+    <option name="LAST_COMMIT_MESSAGE" value="online-music-demo-静态资源" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/music/service/impl/UserServiceImpl.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/dev/apache-maven-3.8.4/mvn_resp/org/springframework/security/spring-security-web/5.6.5/spring-security-web-5.6.5.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/swei/music/config/RestAuthoricationEntryPoint.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
